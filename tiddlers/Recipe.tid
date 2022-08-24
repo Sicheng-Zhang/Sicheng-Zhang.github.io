@@ -1,0 +1,12 @@
+color: #df6868
+created: 20220107220237113
+icon: $:/core/images/tag-button
+modified: 20220824183533179
+tags: 
+title: Recipe
+type: text/vnd.tiddlywiki
+
+Back to [[index]]
+
+Go to
+<<list-links "[tag[Recipe]sort[title]]">>

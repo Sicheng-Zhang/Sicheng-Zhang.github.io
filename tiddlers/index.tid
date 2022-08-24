@@ -1,0 +1,32 @@
+created: 20220109214502578
+modified: 20220824184220777
+tags: 
+title: index
+type: text/vnd.tiddlywiki
+
+<style>
+img {
+  border-radius: 50%;
+}
+a { text-decoration: none; }
+</style>
+
+<img src="https://avatars.githubusercontent.com/u/43864890?v=4" alt="WESTERLIES" width="70" height="70">
+
+This a personal archive for <a href="https://github.com/Sicheng-Zhang">Sicheng</a>
+
+Go to
+
+<<<
+[[Recipe]]
+
+[[Memory]]
+
+<<<
+
+<br>
+
+Check [[License]]
+
+See
+<a style="color:#3A7CD6;" , href="https://sicheng-zhang.github.io/archive">everything</a>
