@@ -1,0 +1,11 @@
+color: #5265c7
+created: 20220825024706859
+icon: $:/core/images/tag-button
+modified: 20220825025047555
+title: Memo
+type: text/vnd.tiddlywiki
+
+Back to [[index]]
+
+Go to
+<<list-links "[tag[Memo]sort[title]]">>

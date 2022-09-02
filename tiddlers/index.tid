@@ -1,23 +1,27 @@
 created: 20220109214502578
-modified: 20220824184220777
+modified: 20220825024637449
 tags: 
 title: index
 type: text/vnd.tiddlywiki
 
 <style>
 img {
-  border-radius: 50%;
+  border-radius: 5%;
+	transition:transform 0.25s ease;
+	position:center;
 }
-a { text-decoration: none; }
 </style>
 
-<img src="https://avatars.githubusercontent.com/u/43864890?v=4" alt="WESTERLIES" width="70" height="70">
+<img src="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/7e79ee3062f7c638da40bc730c61598ed5d43f56/icon.png" alt="Icon" width="70" height="70">
 
 This a personal archive for <a href="https://github.com/Sicheng-Zhang">Sicheng</a>
 
 Go to
 
 <<<
+
+[[Memo]]
+
 [[Recipe]]
 
 [[Memory]]
