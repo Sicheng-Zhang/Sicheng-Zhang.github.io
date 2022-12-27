@@ -43,7 +43,8 @@ color:#ffffff;">
 <span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
 
-<div class="tc-tiddler-body tc-reveal"><p><br><br></p><ol><li><p>Download the Passport Drive utility <a class="tc-tiddlylink-external" href="https://raw.githubusercontent.com/evox95/wdpassport-utils/master/wdpassport-utils.py" rel="noopener noreferrer" target="_blank"><code>wdpassport-utils</code></a>.</p></li><li><p>Install packages <code>python-devel</code> and <code>lsscsi</code> using the package management.</p></li><li><p>Install python library <code>py_sg</code> using <code>pip</code>:</p><pre class="bash hljs"><code>sudo pip3 install --user git+https://github.com/crypto-universe/py_sg
+<div class="tc-tiddler-body tc-reveal"><p><br><br></p><ol><li><p>Download the Passport Drive utility <a class="tc-tiddlylink-external" href="https://raw.githubusercontent.com/evox95/wdpassport-utils/master/wdpassport-utils.py" rel="noopener noreferrer" target="_blank"><code>wdpassport-utils</code></a>, replace the imported library <code>py_sg</code> with <code>py3_sg</code>.</p><pre class="bash hljs"><code>import py3_sg as py_sg
+</code></pre></li><li><p>Install packages <code>python-devel</code> and <code>lsscsi</code> using the package management.</p></li><li><p>Install python library <code>py3_sg</code> using <code>pip3</code>:</p><pre class="bash hljs"><code>sudo pip3 install --user git+https://github.com/tvladyslav/py3_sg
 </code></pre></li><li><p>Get the drive name, check the line <code>[xxx] Attached SCSI disk</code> above the WD My Passport Drive.</p><pre class="bash hljs"><code>dmesg | grep -i scsi
 </code></pre></li><li><p>Mount the drive and enter the password.</p><pre class="bash hljs"><code>sudo ~/wdpassport-utils.py -u --device /dev/xxx
 </code></pre></li></ol></div>
