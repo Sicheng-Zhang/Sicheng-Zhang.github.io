@@ -49,8 +49,8 @@ Service
 <span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
 
-<div class="tc-tiddler-body tc-reveal"><p><br><br></p><ol><li><p>Get the new domain name to replace the old one (e.g.  move from <code>yyy.com</code> to <code>zzz.com</code>).</p></li><li><p>Setup DNA records on the domain provider. Point the hostname to the IP address of virtual server.  (e.g.  figure below shows the setting for Digital Ocean)</p><p><a class="center" href="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_2937512943.png
-" rel="noopener noreferrer" target="_blank"><img alt="WESTERLIES" src="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_2937512943.png
+<div class="tc-tiddler-body tc-reveal"><p><br><br></p><ol><li><p>Get the new domain name to replace the old one (e.g.  move from <code>yyy.com</code> to <code>zzz.com</code>).</p></li><li><p>Setup DNA records on the domain provider. Point the hostname to the IP address of virtual server.  (e.g.  figure below shows the setting for Digital Ocean)</p><p><a class="center" href="https://westerlies.us/index.php/s/yLcsxwJ6FNYYi4L/preview
+" rel="noopener noreferrer" target="_blank"><img alt="WESTERLIES" src="https://westerlies.us/index.php/s/yLcsxwJ6FNYYi4L/preview
 " width="450"></a></p></li><li><p>ssh to the virtual server. Setup the new domain, disable HTTPS, remove <code>certs</code> files.</p><pre class="bash hljs"><code>sudo nextcloud.occ config:system:<span class="hljs-built_in">set</span> trusted_domains 1 --value=zzz.com
 sudo nextcloud.disable-https
 sudo rm -rf /var/snap/nextcloud/current/certs
@@ -61,8 +61,8 @@ sudo cp -a /snap/certbot/current/. /var/snap/nextcloud/current/certs/certbot/
 </code></pre></li><li><p>Update Let's Encrypt for the new domain.</p><pre class="bash hljs"><code>sudo snap remove certbot
 sudo ufw allow 80,443/tcp
 sudo nextcloud.enable-https lets-   encrypt
-</code></pre></li><li><p>Wait until the new domain presents a Nextcloud login page.</p><p><a class="center" href="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_836734945.png
-" rel="noopener noreferrer" target="_blank"><img alt="WESTERLIES" src="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_836734945.png
+</code></pre></li><li><p>Wait until the new domain presents a Nextcloud login page.</p><p><a class="center" href="https://westerlies.us/index.php/s/caeyMF79qGyRXja/preview
+" rel="noopener noreferrer" target="_blank"><img alt="WESTERLIES" src="https://westerlies.us/index.php/s/caeyMF79qGyRXja/preview
 " width="450"></a></p></li></ol></div>
 </div></p>
 </section>

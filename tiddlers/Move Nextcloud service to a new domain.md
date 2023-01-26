@@ -4,8 +4,8 @@
 
 2. Setup DNA records on the domain provider. Point the hostname to the IP address of virtual server.  (e.g.  figure below shows the setting for Digital Ocean)
 
-	<a href="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_2937512943.png
-" target="_blank" rel="noopener noreferrer" class="center"><img src="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_2937512943.png
+	<a href="https://westerlies.us/index.php/s/yLcsxwJ6FNYYi4L/preview
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://westerlies.us/index.php/s/yLcsxwJ6FNYYi4L/preview
 " alt="WESTERLIES" width="450"></a>
 
 3. ssh to the virtual server. Setup the new domain, disable HTTPS, remove `certs` files.
@@ -35,6 +35,6 @@
 
 4. Wait until the new domain presents a Nextcloud login page.
 
-	<a href="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_836734945.png
-" target="_blank" rel="noopener noreferrer" class="center"><img src="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_836734945.png
+	<a href="https://westerlies.us/index.php/s/caeyMF79qGyRXja/preview
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://westerlies.us/index.php/s/caeyMF79qGyRXja/preview
 " alt="WESTERLIES" width="450"></a>

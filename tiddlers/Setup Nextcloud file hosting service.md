@@ -39,12 +39,12 @@
 	
 7. Setup DNA records on the domain provider. Point the hostname to the IP address of virtual server. (e.g.  figure below shows the setting for Digital Ocean)
 
-	<a href="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_23573983.png
-" target="_blank" rel="noopener noreferrer" class="center"><img src="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_23573983.png
+	<a href="https://westerlies.us/index.php/s/YtYAg7EWsPo2si4/preview
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://westerlies.us/index.php/s/YtYAg7EWsPo2si4/preview
 " alt="WESTERLIES" width="450"></a>
 
 8. Wait until the domain presents a Nextcloud login page. Login with `user1` and `password123`.
 
-	<a href="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_892358463.png
-" target="_blank" rel="noopener noreferrer" class="center"><img src="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/55d22971df329478308ccf66190750453fa3fd9a/image_892358463.png
+	<a href="https://westerlies.us/index.php/s/Na4QmQD93aP87TY/preview
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://westerlies.us/index.php/s/Na4QmQD93aP87TY/preview
 " alt="WESTERLIES" width="450"></a>

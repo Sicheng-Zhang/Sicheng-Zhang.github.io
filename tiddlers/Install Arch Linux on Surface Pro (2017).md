@@ -34,12 +34,10 @@
 		```
 	- Create an ESP partition (For UEFI systems only):
 		- enter `n`, it will ask you to choose a disk number, enter 1. Stay with the default block size, when it asks for the partition size, enter `+512M`  
-		<a href="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/e56d664259adc5a5aeb59c89935e08b8dfe67ea9/image_1636143911959_0.png
-" target="_blank" rel="noopener noreferrer"><img src="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/e56d664259adc5a5aeb59c89935e08b8dfe67ea9/image_1636143911959_0.png
-" alt="WESTERLIES" width="600"></a>
+		<a href="https://westerlies.us/index.php/s/AtA7QjmJdDYW4gp/preview" target="_blank" rel="noopener noreferrer"><img src="https://westerlies.us/index.php/s/AtA7QjmJdDYW4gp/preview" alt="WESTERLIES" width="600"></a>
 		- change the type of the EFI partition to EFI System by enter `t`, enter `L` to see all the partition types available and then enter its corresponding number to the EFI system  
-		<a href="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/e56d664259adc5a5aeb59c89935e08b8dfe67ea9/image_1636143969249_0.png
-" target="_blank" rel="noopener noreferrer"><img src="https://gist.githubusercontent.com/Sicheng-Zhang/45930323f9f6d2de1f6f459ea2f98323/raw/e56d664259adc5a5aeb59c89935e08b8dfe67ea9/image_1636143969249_0.png
+		<a href="https://westerlies.us/index.php/s/WY4dGZtiGY4Nge8/preview
+" target="_blank" rel="noopener noreferrer"><img src="https://westerlies.us/index.php/s/WY4dGZtiGY4Nge8/preview
 " alt="WESTERLIES" width="600"></a>
 	- Create root partition (no swap, no home)  
 		- enter `n` to create a new partition. It will automatically give it partition number 2. Keep on pressing enter to allocate entire remaining disk space to the root partition.  
