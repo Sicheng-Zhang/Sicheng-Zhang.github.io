@@ -1,6 +1,6 @@
 <br><br>
 
-Tools needed: `convert`, `pandoc`, `mutool`.
+**Command line tools: `convert`, `pandoc`, `mutool`.**
 
 <br>
 
