@@ -1,11 +1,11 @@
 <br><br>
 
-**GMIP version: 2.10.32**
+**GIMP version: 2.10.32**
 
 <br>
 
 ### <span style="color:steelblue">Original image </span> 
-*The Rock & Roll Hall of Fame, Cleveland, Ohio. 2022-12.*
+*The Rock & Roll Hall of Fame, Cleveland, Ohio. Taken on 2022-12.*
 
 <a href="https://westerlies.us/index.php/s/2ZLAHNFxeDJqDxr/preview
 " target="_blank" rel="noopener noreferrer"><img src="https://westerlies.us/index.php/s/2ZLAHNFxeDJqDxr/preview
