@@ -70,7 +70,6 @@ Error message and password prompt
 .tc-password-wrapper input {
 	width: 100%;
 }
-
 /*
 ** Start with the normalize CSS reset, and then belay some of its effects
 *//*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -375,9 +374,10 @@ summary {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-}input[type="search"] {
-	outline-offset: initial;
-}html button {
+}/*
+** Button default styles. Makes them look consistent for all browsers
+*/
+html button {
 	line-height: 1.2;
 	color: ;
 	fill: ;
@@ -476,8 +476,6 @@ summary {
 }dl dt {
 	font-weight: bold;
 	margin-top: 6px;
-}button, textarea, input, select {
-	outline-color: #127edd;
 }textarea,
 input[type=text],
 input[type=search],
@@ -516,6 +514,11 @@ input[type="search"]::-webkit-search-results-decoration {
 	color: HighlightText;
 	background-color: ;
 	color: ;
+}.tc-inline-style {
+	background: #ffff00;
+	color: #000000;
+}form.tc-form-inline {
+	display: inline;
 }/*
 Markdown likes putting code elements inside pre elements
 */
@@ -524,7 +527,9 @@ pre > code {
 	border: none;
 	background-color: inherit;
 	color: inherit;
-}table {
+}/*
+Table defaults
+*/table {
 	border: 1px solid #dddddd;
 	width: auto;
 	max-width: 100%;
@@ -543,9 +548,45 @@ pre > code {
 	font-weight: bold;
 }table tfoot tr td {
 	background-color: #a8a8a8;
-}.tc-csv-table {
+}/*
+Table utility classes
+*//* Remove borders from table as used in eg: GettingStarted*/
+.tc-table-no-border,
+.tc-table-no-border th,
+.tc-table-no-border td {
+	border: initial;
+}/* First column in table width will fit to text.*/
+/* This rule makes most sense with tc-first-link-nowrap*/
+.tc-first-col-min-width td:nth-child(1) {
+	width: 1%;
+}/*
+** Utility classes work well with tables but also for other containers
+*//* First link A element will not wrap */
+.tc-first-link-nowrap:first-of-type a {
 	white-space: nowrap;
-}.tc-tiddler-frame img,
+}/* Move the table to the center of the container */
+.tc-center {
+	margin-left: auto;
+	margin-right: auto;
+}.tc-max-width {
+	width: 100%;
+}.tc-max-width-80 {
+	max-width: 80%;
+}/* Allow input and textarea to look like the ControlPanel inputs */
+.tc-edit-max-width input,
+.tc-edit-max-width textarea {
+	width: 100%;
+	padding: 3px;
+}/*
+CSV parser plugin
+*/.tc-csv-table {
+	white-space: nowrap;
+}.tc-csv-table th,
+.tc-csv-table td {
+	white-space: pre-line;
+}/*
+Tiddler frame in story river
+*/.tc-tiddler-frame img,
 .tc-tiddler-frame svg,
 .tc-tiddler-frame canvas,
 .tc-tiddler-frame embed,
@@ -555,6 +596,8 @@ pre > code {
 .tc-tiddler-body > iframe {
 	width: 100%;
 	height: 600px;
+}:root {
+	color-scheme: light;
 }/*
 ** Links
 */button.tc-tiddlylink,
@@ -563,6 +606,7 @@ a.tc-tiddlylink {
 	font-weight: 500;
 	color: #127edd;
 	-webkit-user-select: inherit; /* Otherwise the draggable attribute makes links impossible to select */
+	-webkit-touch-callout: none; /* Prevents long presses from bringing up a link preview */
 }.tc-sidebar-lists a.tc-tiddlylink {
 	color: #888888;
 }.tc-sidebar-lists a.tc-tiddlylink:hover {
@@ -625,7 +669,7 @@ a.tc-tiddlylink:hover {
 	right: 0;
 	background: #da8548;
 	text-align: center;
-	content: "Drop here (or use the 'Escape' key to cancel)";
+	content: "Drop now (or use the 'Escape' key to cancel)";
 }.tc-droppable > .tc-droppable-placeholder {
 	display: none;
 }.tc-droppable.tc-dragover > .tc-droppable-placeholder {
@@ -814,16 +858,13 @@ a.tc-tiddlylink:hover {
 	font-weight: normal;
 	line-height: 1.2em;
 	color: #000;
-	white-space: nowrap;
+	white-space: break-spaces;
 	vertical-align: baseline;
 	background-color: #ffeedd;
 	border-radius: 1em;
 }.tc-sidebar-scrollable .tc-tag-label {
 	text-shadow: none;
 }.tc-untagged-separator {
-	width: 10em;
-	left: 0;
-	margin-left: 0;
 	border: 0;
 	height: 1px;
 	background: #d8d8d8;
@@ -839,7 +880,6 @@ a.tc-tiddlylink:hover {
 	font-size: 0.7em;
 	vertical-align: middle;
 }.tc-tag-manager-table .tc-tag-label {
-	white-space: normal;
 }.tc-tag-manager-tag {
 	width: 100%;
 }button.tc-btn-invisible.tc-remove-tag-button {
@@ -982,6 +1022,8 @@ a.tc-tiddlylink:hover {
 	width: 100%;
 }.tc-view-field-name {
 	width: 1%; /* Makes this column be as narrow as possible */
+	white-space: nowrap;
+	vertical-align: top;
 	text-align: right;
 	font-style: italic;
 	font-weight: normal;
@@ -1032,6 +1074,7 @@ a.tc-tiddlylink:hover {
 	font-weight: normal;
 }.tc-tiddler-frame .tc-tiddler-controls {
 	float: right;
+	padding: 3px; /* make space for outline */
 }.tc-tiddler-controls .tc-drop-down {
 	font-size: 0.6em;
 }.tc-tiddler-controls .tc-drop-down .tc-drop-down {
@@ -1070,17 +1113,27 @@ a.tc-tiddlylink:hover {
 	margin: 4px 0 4px 0;
 }.tc-tiddler-frame input.tc-edit-texteditor,
 .tc-tiddler-frame textarea.tc-edit-texteditor,
-.tc-tiddler-frame iframe.tc-edit-texteditor {
+.tc-tiddler-frame iframe.tc-edit-texteditor,
+.tc-tiddler-frame select.tc-edit-texteditor {
 	padding: 3px 3px 3px 3px;
 	border: 1px solid rgba(0,0,0,.2);
 	line-height: 1.3em;
-	-webkit-appearance: none;
 	font-family: ;
 }.tc-tiddler-frame input.tc-edit-texteditor,
+.tc-tiddler-frame textarea.tc-edit-texteditor,
+.tc-tiddler-frame iframe.tc-edit-texteditor {
+	-webkit-appearance: none;
+}.tc-tiddler-frame input.tc-edit-texteditor,
+.tc-tiddler-frame select.tc-edit-texteditor,
 .tc-tiddler-frame textarea.tc-edit-texteditor {
 	background-color: #ffffff;
 }.tc-tiddler-frame iframe.tc-edit-texteditor {
 	background-color: #ffffff;
+}.tc-tiddler-frame .tc-edit-fields input.tc-edit-fieldeditor,
+.tc-tiddler-frame .tc-edit-fields select.tc-edit-fieldeditor,
+.tc-tiddler-frame .tc-edit-fields textarea.tc-edit-fieldeditor {
+	margin: 0;
+	padding: 2px 3px;
 }.tc-tiddler-frame .tc-binary-warning {
 	width: 100%;
 	height: 5em;
@@ -1178,6 +1231,8 @@ a.tc-tiddlylink:hover {
 	fill: ;
 }.tc-tiddler-controls button svg.tc-image-done-button {
 	fill: ;
+}.tc-page-controls svg.tc-image-layout-button {
+	fill: ;
 }/*
 ** Tiddler edit mode
 */.tc-tiddler-edit-frame em.tc-edit {
@@ -1267,7 +1322,7 @@ a.tc-tiddlylink:hover {
 	right:0;
 	height: 100%;
 	background: #da8548;
-	content: "Drop here (or use the 'Escape' key to cancel)";
+	content: "Drop now (or use the 'Escape' key to cancel)";
 	pointer-events: none;
 	position: absolute;
 	display: flex;
@@ -1299,11 +1354,11 @@ a.tc-tiddlylink:hover {
 ** Storyview Classes
 */.tc-viewswitcher .tc-image-button {
 	margin-right: .3em;
-}.tc-storyview-zoomin-tiddler {
+}.tc-page-container.tc-page-view-zoomin .tc-tiddler-frame {
 	position: absolute;
 	display: block;
 	width: 100%;
-}@media (min-width: 960px) {.tc-storyview-zoomin-tiddler {
+}@media (min-width: 960px) {.tc-page-container.tc-page-view-zoomin .tc-tiddler-frame {
 		width: calc(100% - 84px);
 	}}/*
 ** Dropdowns
@@ -1449,7 +1504,10 @@ a.tc-tiddlylink:hover {
 	left: 0;
 	right: 0;
 	margin: auto;
-}/*
+}/* Make search dropdown visible on small screens. issue #7003 */
+@media (max-width: 960px) {.tc-sidebar-search .tc-block-dropdown-wrapper {
+		position: initial;
+	}}/*
 ** Modals
 */.tc-modal-wrapper {
 	position: fixed;
@@ -1641,6 +1699,8 @@ a.tc-tiddlylink:hover {
 	
 }.tc-manager-control {
 	margin: 0.5em 0;
+}.tc-manager-control select {
+	max-width: 100%;
 }.tc-manager-list {
 	width: 100%;
 	border-top: 1px solid #999999;
@@ -1768,7 +1828,7 @@ a.tc-tiddlylink:hover {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 	border: 1px solid #ffffff;
-	border-bottom-none;
+	border-bottom: none;
 	background: #c63636;
 	color: #ffffff;
 	fill: #ffffff;
@@ -1974,6 +2034,9 @@ a.tc-tiddlylink:hover {
 	white-space: nowrap;
 }.tc-table-of-contents button {
 	color: #acacac;
+}button + .tc-toc-caption,
+button > .tc-toc-caption{
+	margin-left: .25em;
 }.tc-table-of-contents svg {
 	width: 0.7em;
 	height: 0.7em;
@@ -2048,7 +2111,15 @@ a.tc-tiddlylink:hover {
 	flex: 1 0 50%;
 }/*
 ** Dirty indicator
-*/body.tc-dirty span.tc-dirty-indicator, body.tc-dirty span.tc-dirty-indicator svg {
+*/html body svg.tc-image-save-button-dynamic .tc-image-save-button-dynamic-clean {
+	visibility: visible;
+}html body svg.tc-image-save-button-dynamic .tc-image-save-button-dynamic-dirty {
+	visibility: hidden;
+}html body.tc-dirty svg.tc-image-save-button-dynamic .tc-image-save-button-dynamic-clean {
+	visibility: hidden;
+}html body.tc-dirty svg.tc-image-save-button-dynamic .tc-image-save-button-dynamic-dirty {
+	visibility: visible;
+}html body.tc-dirty span.tc-dirty-indicator, html body.tc-dirty span.tc-dirty-indicator svg {
 	fill: #c63636;
 	color: #c63636;
 }/*
@@ -2218,7 +2289,7 @@ a.tc-tiddlylink:hover {
 	flex-grow: 2;
 }/*
 ** Other utility classes
-*/.tc-tiny-gap {
+*//* Horizontal gaps */.tc-tiny-gap {
 	margin-left: .25em;
 	margin-right: .25em;
 }.tc-tiny-gap-left {
@@ -2241,10 +2312,9 @@ a.tc-tiddlylink:hover {
 	margin-right: 1em;
 }.tc-word-break {
 	word-break: break-all;
+}/* Vertical gaps */.tc-tiny-v-gap-bottom {
+	margin-bottom: 3px;
 }
-
-
-
 button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fclone, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fclone, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fclone,
 button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fdelete, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fdelete, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fdelete,
 button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fedit, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fedit, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fedit,
@@ -2257,8 +2327,6 @@ button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-journal, .tc-drop-down bu
 button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-tiddler, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-tiddler, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-tiddler {
 	display: none;
 }
-
-
 body.tc-dirty span.tc-dirty-indicator svg {
 	transition: fill 250ms ease-in-out;
 }body .tc-image-cloud-idle {
@@ -2288,11 +2356,7 @@ body.tc-dirty span.tc-dirty-indicator svg {
 		transform: scale(359deg);
 	}
 }
-
-
 .CodeMirror{font-family:monospace;height:300px;color:#000;direction:ltr}.CodeMirror-lines{padding:4px 0}.CodeMirror pre.CodeMirror-line,.CodeMirror pre.CodeMirror-line-like{padding:0 4px}.CodeMirror-scrollbar-filler,.CodeMirror-gutter-filler{background-color:#fff}.CodeMirror-gutters{border-right:1px solid #ddd;background-color:#f7f7f7;white-space:nowrap}.CodeMirror-linenumber{padding:0 3px 0 5px;min-width:20px;text-align:right;color:#999;white-space:nowrap}.CodeMirror-guttermarker{color:#000}.CodeMirror-guttermarker-subtle{color:#999}.CodeMirror-cursor{border-left:1px solid #000;border-right:none;width:0}.CodeMirror div.CodeMirror-secondarycursor{border-left:1px solid silver}.cm-fat-cursor .CodeMirror-cursor{width:auto;border:0!important;background:#7e7}.cm-fat-cursor div.CodeMirror-cursors{z-index:1}.cm-fat-cursor-mark{background-color:rgba(20,255,20,0.5);-webkit-animation:blink 1.06s steps(1) infinite;-moz-animation:blink 1.06s steps(1) infinite;animation:blink 1.06s steps(1) infinite}.cm-animate-fat-cursor{width:auto;border:0;-webkit-animation:blink 1.06s steps(1) infinite;-moz-animation:blink 1.06s steps(1) infinite;animation:blink 1.06s steps(1) infinite;background-color:#7e7}@-moz-keyframes blink{50%{background-color:transparent}}@-webkit-keyframes blink{50%{background-color:transparent}}@keyframes blink{50%{background-color:transparent}}.cm-tab{display:inline-block;text-decoration:inherit}.CodeMirror-rulers{position:absolute;left:0;right:0;top:-50px;bottom:0;overflow:hidden}.CodeMirror-ruler{border-left:1px solid #ccc;top:0;bottom:0;position:absolute}.cm-s-default .cm-header{color:blue}.cm-s-default .cm-quote{color:#090}.cm-negative{color:#d44}.cm-positive{color:#292}.cm-header,.cm-strong{font-weight:700}.cm-em{font-style:italic}.cm-link{text-decoration:underline}.cm-strikethrough{text-decoration:line-through}.cm-s-default .cm-keyword{color:#708}.cm-s-default .cm-atom{color:#219}.cm-s-default .cm-number{color:#164}.cm-s-default .cm-def{color:#00f}.cm-s-default .cm-variable-2{color:#05a}.cm-s-default .cm-variable-3,.cm-s-default .cm-type{color:#085}.cm-s-default .cm-comment{color:#a50}.cm-s-default .cm-string{color:#a11}.cm-s-default .cm-string-2{color:#f50}.cm-s-default .cm-meta{color:#555}.cm-s-default .cm-qualifier{color:#555}.cm-s-default .cm-builtin{color:#30a}.cm-s-default .cm-bracket{color:#997}.cm-s-default .cm-tag{color:#170}.cm-s-default .cm-attribute{color:#00c}.cm-s-default .cm-hr{color:#999}.cm-s-default .cm-link{color:#00c}.cm-s-default .cm-error{color:red}.cm-invalidchar{color:red}.CodeMirror-composing{border-bottom:2px solid}div.CodeMirror span.CodeMirror-matchingbracket{color:#0b0}div.CodeMirror span.CodeMirror-nonmatchingbracket{color:#a22}.CodeMirror-matchingtag{background:rgba(255,150,0,.3)}.CodeMirror-activeline-background{background:#e8f2ff}.CodeMirror{position:relative;overflow:hidden;background:#fff}.CodeMirror-scroll{overflow:scroll!important;margin-bottom:-50px;margin-right:-50px;padding-bottom:50px;height:100%;outline:none;position:relative}.CodeMirror-sizer{position:relative;border-right:50px solid transparent}.CodeMirror-vscrollbar,.CodeMirror-hscrollbar,.CodeMirror-scrollbar-filler,.CodeMirror-gutter-filler{position:absolute;z-index:6;display:none;outline:none}.CodeMirror-vscrollbar{right:0;top:0;overflow-x:hidden;overflow-y:scroll}.CodeMirror-hscrollbar{bottom:0;left:0;overflow-y:hidden;overflow-x:scroll}.CodeMirror-scrollbar-filler{right:0;bottom:0}.CodeMirror-gutter-filler{left:0;bottom:0}.CodeMirror-gutters{position:absolute;left:0;top:0;min-height:100%;z-index:3}.CodeMirror-gutter{white-space:normal;height:100%;display:inline-block;vertical-align:top;margin-bottom:-50px}.CodeMirror-gutter-wrapper{position:absolute;z-index:4;background:none!important;border:none!important}.CodeMirror-gutter-background{position:absolute;top:0;bottom:0;z-index:4}.CodeMirror-gutter-elt{position:absolute;cursor:default;z-index:4}.CodeMirror-gutter-wrapper ::selection{background-color:transparent}.CodeMirror-gutter-wrapper ::-moz-selection{background-color:transparent}.CodeMirror-lines{cursor:text;min-height:1px}.CodeMirror pre.CodeMirror-line,.CodeMirror pre.CodeMirror-line-like{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;border-width:0;background:transparent;font-family:inherit;font-size:inherit;margin:0;white-space:pre;word-wrap:normal;line-height:inherit;color:inherit;z-index:2;position:relative;overflow:visible;-webkit-tap-highlight-color:transparent;-webkit-font-variant-ligatures:contextual;font-variant-ligatures:contextual}.CodeMirror-wrap pre.CodeMirror-line,.CodeMirror-wrap pre.CodeMirror-line-like{word-wrap:break-word;white-space:pre-wrap;word-break:normal}.CodeMirror-linebackground{position:absolute;left:0;right:0;top:0;bottom:0;z-index:0}.CodeMirror-linewidget{position:relative;z-index:2;padding:.1px}.CodeMirror-rtl pre{direction:rtl}.CodeMirror-code{outline:none}.CodeMirror-scroll,.CodeMirror-sizer,.CodeMirror-gutter,.CodeMirror-gutters,.CodeMirror-linenumber{-moz-box-sizing:content-box;box-sizing:content-box}.CodeMirror-measure{position:absolute;width:100%;height:0;overflow:hidden;visibility:hidden}.CodeMirror-cursor{position:absolute;pointer-events:none}.CodeMirror-measure pre{position:static}div.CodeMirror-cursors{visibility:hidden;position:relative;z-index:3}div.CodeMirror-dragcursors{visibility:visible}.CodeMirror-focused div.CodeMirror-cursors{visibility:visible}.CodeMirror-selected{background:#d9d9d9}.CodeMirror-focused .CodeMirror-selected{background:#d7d4f0}.CodeMirror-crosshair{cursor:crosshair}.CodeMirror-line::selection,.CodeMirror-line > span::selection,.CodeMirror-line > span > span::selection{background:#d7d4f0}.CodeMirror-line::-moz-selection,.CodeMirror-line > span::-moz-selection,.CodeMirror-line > span > span::-moz-selection{background:#d7d4f0}.cm-searching{background-color:#ffa;background-color:rgba(255,255,0,.4)}.cm-force-border{padding-right:.1px}@media print{.CodeMirror div.CodeMirror-cursors{visibility:hidden}}.cm-tab-wrap-hack:after{content:}span.CodeMirror-selectedtext{background:none}
-
-
 .CodeMirror-dialog {
   position: absolute;
   left: 0; right: 0;
@@ -2325,8 +2389,6 @@ body.tc-dirty span.tc-dirty-indicator svg {
 .CodeMirror-dialog button {
   font-size: 70%;
 }
-
-
 /* Make the editor resize to fit its content */.CodeMirror {
 	height: auto;
 	border: 1px solid rgba(0,0,0,.2);
@@ -2393,116 +2455,22 @@ body.tc-dirty span.tc-dirty-indicator svg {
 
 
 
-
-
-/*
-
-Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
-
-*/
-
-.hljs {
-  display: block;
-  overflow-x: auto;
+/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#f3f3f3;color:#444}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}pre.hljs {
+  padding: 0;
+}pre code.hljs {
   padding: 0.5em;
-  background: #F0F0F0;
-}
-
-
-/* Base color: saturation 0; */
-
-.hljs,
-.hljs-subst {
-  color: #444;
-}
-
-.hljs-comment {
-  color: #888888;
-}
-
-.hljs-keyword,
-.hljs-attribute,
-.hljs-selector-tag,
-.hljs-meta-keyword,
-.hljs-doctag,
-.hljs-name {
-  font-weight: bold;
-}
-
-
-/* User color: hue: 0 */
-
-.hljs-type,
-.hljs-string,
-.hljs-number,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-quote,
-.hljs-template-tag,
-.hljs-deletion {
-  color: #880000;
-}
-
-.hljs-title,
-.hljs-section {
-  color: #880000;
-  font-weight: bold;
-}
-
-.hljs-regexp,
-.hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-  color: #BC6060;
-}
-
-
-/* Language color: hue: 90; */
-
-.hljs-literal {
-  color: #78A960;
-}
-
-.hljs-built_in,
-.hljs-bullet,
-.hljs-code,
-.hljs-addition {
-  color: #397300;
-}
-
-
-/* Meta color: hue: 200 */
-
-.hljs-meta {
-  color: #1f7199;
-}
-
-.hljs-meta-string {
-  color: #4d99bf;
-}
-
-
-/* Misc effects */
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
-
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
+}.hljs {
   background: #ffffff;
   color: #283c46;
-  -webkit-text-size-adjust:none
+  -webkit-text-size-adjust:none;
 }.hljs-comment,
 .hljs-quote {
   color: #93a1a1;
@@ -2514,7 +2482,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }/* Solarized Cyan */
 .hljs-number,
 .hljs-string,
-.hljs-meta .hljs-meta-string,
+.hljs-meta .hljs-string,
 .hljs-literal,
 .hljs-doctag,
 .hljs-regexp {
@@ -2555,8 +2523,52 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }.hljs-strong {
   font-weight: bold;
 }
-
-
+.markdown {
+	display: block;
+	margin: 0px;
+}
+.markdown hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #999999;
+}
+.markdown .footnotes {
+	font-size: 0.9em;
+	line-height: 1.32;
+}
+.markdown a.footnote-ref {
+	color: #127edd;
+	font-size: 0.75em;
+	text-decoration: none;
+	vertical-align: super;
+	padding:0px 1px;
+}
+.markdown ol.footnotes-list {
+	padding-left: 2em;
+}
+.markdown .footnote-item p {
+	margin: 0.7em 0px;
+}
+.markdown a.footnote-backref {
+	color: #127edd;
+	font-size: 0.8em;
+	text-decoration: none;
+	margin-left: 0.25em;
+}
+.markdown a.footnote-ref:target, .markdown .footnote-item:target {
+	background-color: #ecf2ff;
+	scroll-margin-top: 60px;
+}
+.markdown li > p:first-child {
+	margin-top: 0px;
+}
+.markdown li + li {
+	margin-top: 2px;
+}
+.markdown mark {
+	padding: 1px 3px;
+}
 /* Top and bottom bars *//* Hide the top-right bar */
 .tc-topbar.tc-topbar-right {
   display: none;
@@ -2934,7 +2946,3 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   color: #acacac;
   font-size: .8em;
 }
-
-
-
-
