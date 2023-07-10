@@ -14,7 +14,14 @@
 	```bash
 	sudo dnf system-upgrade download --releasever=37
 	```
-
+	
+	**Tip**: If `dnf upgrade` returns the error *"The operation would result in removing the following protected packages: kernel-surface"*, skip the kernel update using:
+	```bash
+	sudo dnf upgrade --refresh --exclude="kernel-surface*"
+	sudo dnf install dnf-plugin-system-upgrade
+	sudo dnf system-upgrade download --releasever=37 --exclude="kernel-surface*"
+	```
+	
 4. Reboot to upgrade the system.
 	```bash
 	sudo dnf system-upgrade reboot
@@ -27,4 +34,4 @@
 
 6. Modify or create the config file at `/et/fonts/local.conf`. Use the content from [local.conf](https://github.com/zma/config_files/blob/master/others/local.conf).
 
-7. **Tip**: To better rendering Japanese characters, install `Google Noto` fonts.
+	**Tip**: To better rendering Japanese characters, install `Google Noto` fonts.

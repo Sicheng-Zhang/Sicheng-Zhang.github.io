@@ -3974,6 +3974,12 @@ color:#ffffff;"><svg class="tc-image-tag-button tc-image-button" height="22pt" v
 </p>
 <pre class="hljs"><code class="bash hljs">sudo dnf system-upgrade download --releasever=37
 </code></pre>
+<p><strong>Tip</strong>: If <code class="_codified_">dnf upgrade</code> returns the error <em>"The operation would result in removing the following protected packages: kernel-surface"</em>, skip the kernel update using:
+</p>
+<pre class="hljs"><code class="bash hljs">sudo dnf upgrade --refresh --exclude=<span class="hljs-string">&quot;kernel-surface*&quot;</span>
+sudo dnf install dnf-plugin-system-upgrade
+sudo dnf system-upgrade download --releasever=37 --exclude=<span class="hljs-string">&quot;kernel-surface*&quot;</span>
+</code></pre>
 </li>
 <li>
 <p>Reboot to upgrade the system.
@@ -3990,8 +3996,6 @@ color:#ffffff;"><svg class="tc-image-tag-button tc-image-button" height="22pt" v
 <li>
 <p>Modify or create the config file at <code class="_codified_">/et/fonts/local.conf</code>. Use the content from <a class="tc-tiddlylink-external _codified_" href="https://github.com/zma/config_files/blob/master/others/local.conf" rel="noopener noreferrer" target="_blank">local.conf</a>.
 </p>
-</li>
-<li>
 <p><strong>Tip</strong>: To better rendering Japanese characters, install <code class="_codified_">Google Noto</code> fonts.
 </p>
 </li>
