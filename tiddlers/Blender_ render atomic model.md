@@ -6,7 +6,7 @@
 
 <br>
 
-1. Import the atomic structure in ChimeraX, customize the visualizations to your liking. As an example, the visualization for PDB 4KZ2 in ChimeraX is shown below.
+1. Import the atomic structure in a molecular visualization software, customize the visualizations to your liking. As an example, the visualization for PDB 4KZ2 in ChimeraX is shown below.
 
 	<a href="https://westerlies.us/index.php/s/bW9JCRf96Nk2a6L/preview
 " target="_blank" rel="noopener noreferrer"><img src="https://westerlies.us/index.php/s/bW9JCRf96Nk2a6L/preview
