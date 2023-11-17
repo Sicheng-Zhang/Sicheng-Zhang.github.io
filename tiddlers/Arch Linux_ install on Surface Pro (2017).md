@@ -34,10 +34,10 @@
 		```
 	- Create an ESP partition (For UEFI systems only):
 		- enter `n`, it will ask you to choose a disk number, enter 1. Stay with the default block size, when it asks for the partition size, enter `+512M`  
-		<a href="https://westerlies.us/index.php/s/AtA7QjmJdDYW4gp/preview" target="_blank" rel="noopener noreferrer"><img src="https://westerlies.us/index.php/s/AtA7QjmJdDYW4gp/preview" alt="WESTERLIES" width="600"></a>
+		<a href="https://ucarecdn.com/cf04c112-8e1b-4b33-a11c-28c6aafade5d/image_1636143911959_0.png" target="_blank" rel="noopener noreferrer"><img src="https://ucarecdn.com/cf04c112-8e1b-4b33-a11c-28c6aafade5d/image_1636143911959_0.png" alt="WESTERLIES" width="600"></a>
 		- change the type of the EFI partition to EFI System by enter `t`, enter `L` to see all the partition types available and then enter its corresponding number to the EFI system  
-		<a href="https://westerlies.us/index.php/s/WY4dGZtiGY4Nge8/preview
-" target="_blank" rel="noopener noreferrer"><img src="https://westerlies.us/index.php/s/WY4dGZtiGY4Nge8/preview
+		<a href="https://ucarecdn.com/f0c9df90-2224-4c10-9bb7-911d0b95c2a8/image_1636143969249_0.png
+" target="_blank" rel="noopener noreferrer"><img src="https://ucarecdn.com/f0c9df90-2224-4c10-9bb7-911d0b95c2a8/image_1636143969249_0.png
 " alt="WESTERLIES" width="600"></a>
 	- Create root partition (no swap, no home)  
 		- enter `n` to create a new partition. It will automatically give it partition number 2. Keep on pressing enter to allocate entire remaining disk space to the root partition.  
