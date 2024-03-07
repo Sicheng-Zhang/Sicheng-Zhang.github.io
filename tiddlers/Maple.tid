@@ -1,12 +1,12 @@
 created: 20240117232222940
-modified: 20240307041915959
+modified: 20240307042658394
 tags: Season
 title: Maple
 type: text/vnd.tiddlywiki
 
 <head>
 <style>
-.fling-minislide {width:500px; height: 500px; overflow:hidden; position:relative; }
+.fling-minislide {width:370px; height: 370px; overflow:hidden; position:relative; }
 .fling-minislide img{ position:absolute; animation:fling-minislide 24s infinite; opacity:0; width: 100%; height: auto;}
 
 @keyframes fling-minislide {5%{opacity:1;} 50%{opacity:0;}}
@@ -28,28 +28,28 @@ type: text/vnd.tiddlywiki
 </head>
 
 <div class="fling-minislide">
-  <img src="https://ucarecdn.com/5ac5bcda-572e-47fc-8c7f-81f5319fdd7d/-/preview/1200x1000" alt="Slide 1" />
+  <img src="https://ucarecdn.com/5ac5bcda-572e-47fc-8c7f-81f5319fdd7d/-/preview/1000x750" alt="Slide 1" />
 	
-  <img src="https://ucarecdn.com/cea36e9c-e0fc-4df6-9f9c-b7a061d9462f/-/preview/1200x1000" alt="Slide 2" />
+  <img src="https://ucarecdn.com/cea36e9c-e0fc-4df6-9f9c-b7a061d9462f/-/preview/1000x750" alt="Slide 2" />
 
-  <img src="https://ucarecdn.com/eb6b3257-ceb0-402c-a6c6-6f7823bf132b/-/preview/1200x1000" alt="Slide 3" />
+  <img src="https://ucarecdn.com/eb6b3257-ceb0-402c-a6c6-6f7823bf132b/-/preview/1000x750" alt="Slide 3" />
 
-  <img src="https://ucarecdn.com/07aba214-c6db-4841-90dc-9e4a226628ca/-/preview/1200x1000" alt="Slide 4" />
+  <img src="https://ucarecdn.com/07aba214-c6db-4841-90dc-9e4a226628ca/-/preview/1000x750" alt="Slide 4" />
 	
-	<img src="https://ucarecdn.com/238d1ba4-9861-4895-922a-2d9dbb90103b/-/preview/1200x1000" alt="Slide 5" />
+	<img src="https://ucarecdn.com/238d1ba4-9861-4895-922a-2d9dbb90103b/-/preview/1000x750" alt="Slide 5" />
 	
-	<img src="https://ucarecdn.com/7ce2c489-c5c0-46d0-85cb-3b8ab2353889/-/preview/1200x1000" alt="Slide 6" />
+	<img src="https://ucarecdn.com/7ce2c489-c5c0-46d0-85cb-3b8ab2353889/-/preview/1000x750" alt="Slide 6" />
 
-	<img src="https://ucarecdn.com/56a42c53-4746-4f23-ba63-b013c6dbbc82/-/preview/1200x1000" alt="Slide 7" />
+	<img src="https://ucarecdn.com/56a42c53-4746-4f23-ba63-b013c6dbbc82/-/preview/1000x750" alt="Slide 7" />
 
-	<img src="https://ucarecdn.com/ccc7f5b4-d861-4439-9ca6-4db593b94fce/-/preview/1200x1000" alt="Slide 8" />
+	<img src="https://ucarecdn.com/ccc7f5b4-d861-4439-9ca6-4db593b94fce/-/preview/1000x750" alt="Slide 8" />
 
-	<img src="https://ucarecdn.com/d7c2d629-cb2b-4f55-b204-5828130e2397/-/preview/1200x1000" alt="Slide 9" />
+	<img src="https://ucarecdn.com/d7c2d629-cb2b-4f55-b204-5828130e2397/-/preview/1000x750" alt="Slide 9" />
 
-	<img src="https://ucarecdn.com/de4f1143-fc7f-4507-908d-89b57ddba8c9/-/preview/1200x1000" alt="Slide 10" />
+	<img src="https://ucarecdn.com/de4f1143-fc7f-4507-908d-89b57ddba8c9/-/preview/1000x750" alt="Slide 10" />
 
-	<img src="https://ucarecdn.com/081ee6e0-ed90-4908-ae2a-05ce1f8b1dd9/-/preview/1200x1000" alt="Slide 11" />
+	<img src="https://ucarecdn.com/081ee6e0-ed90-4908-ae2a-05ce1f8b1dd9/-/preview/1000x750" alt="Slide 11" />
 
-	<img src="https://ucarecdn.com/aab58473-1ccd-45e6-8d51-bfdf0bd73adf/-/preview/1200x1000" alt="Slide 12" />
+	<img src="https://ucarecdn.com/aab58473-1ccd-45e6-8d51-bfdf0bd73adf/-/preview/1000x750" alt="Slide 12" />
 
 </div>
