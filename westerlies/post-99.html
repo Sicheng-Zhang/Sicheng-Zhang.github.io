@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.2.7" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>Nextcloud: move service to a new domain: WESTERLIES — a personal web notebook</title>
+</head>
+<body class="tc-body">
+
+
+<section class="tc-story-river tc-static-story-river">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Memo tc-tagged-Service tc-tagged-Nextcloud tc-tagged-Linux" data-tags="Memo Service Nextcloud Linux" data-tiddler-title="Nextcloud: move service to a new domain" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">Nextcloud: move service to a new domain</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class="tc-reveal"></div><div class=" tc-reveal"></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="Linux"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#283c46;
+color:#283c46;">Linux</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item" data-tag-title="Memo"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:#5265c7;
+fill:#ffffff;
+color:#ffffff;"><svg class="tc-image-tag-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M18.164 47.66l.004 4.105c.003 3.823 2.19 9.097 4.885 11.792l61.85 61.85c2.697 2.697 7.068 2.69 9.769-.01L125.767 94.3a6.903 6.903 0 00.01-9.77L63.928 22.683c-2.697-2.697-7.976-4.88-11.796-4.881l-27.076-.007a6.902 6.902 0 00-6.91 6.91l.008 9.96.287.033c3.73.411 8.489-.044 13.365-1.153a9.702 9.702 0 0111.14-3.662l.291-.13.128.285a9.7 9.7 0 013.3 2.17c3.796 3.796 3.801 9.945.012 13.734-3.618 3.618-9.386 3.777-13.204.482-5.365 1.122-10.674 1.596-15.309 1.237z"></path><path d="M47.633 39.532l.023.051c-9.689 4.356-21.584 6.799-30.396 5.828C5.273 44.089-1.028 36.43 2.443 24.078 5.562 12.976 14.3 4.361 24.047 1.548c10.68-3.083 19.749 1.968 19.749 13.225h-8.623c0-4.859-3.078-6.573-8.735-4.94-6.91 1.995-13.392 8.383-15.694 16.577-1.915 6.818.417 9.653 7.46 10.43 7.126.785 17.531-1.352 25.917-5.121l.027.06.036-.017c1.76-.758 6.266 6.549 3.524 7.74a2.8 2.8 0 01-.075.03z"></path></g></svg>Memo</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item" data-tag-title="Nextcloud"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#283c46;
+color:#283c46;">Nextcloud</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item" data-tag-title="Service"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#283c46;
+color:#283c46;">Service</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span></div></div><div class="tc-tiddler-body tc-reveal"><div class="markdown">
+<p><br><br>
+</p>
+<ol>
+<li>
+<p>Get the new domain name to replace the old one (e.g.  move from <code class="_codified_">yyy.com</code> to <code class="_codified_">zzz.com</code>).
+</p>
+</li>
+<li>
+<p>Setup DNA records on the domain provider. Point the hostname to the IP address of virtual server.  (e.g.  figure below shows the setting for Digital Ocean)
+</p>
+<p><a class="center" href="https://ucarecdn.com/566a6c44-bc9d-4353-aeab-d52b55f677bd/image_2937512943.png
+" rel="noopener noreferrer" target="_blank"><img alt="WESTERLIES" src="https://ucarecdn.com/566a6c44-bc9d-4353-aeab-d52b55f677bd/image_2937512943.png
+" width="450"></a>
+</p>
+</li>
+<li>
+<p>ssh to the virtual server. Setup the new domain, disable HTTPS, remove <code class="_codified_">certs</code> files.
+</p>
+<pre class="hljs"><code class="bash hljs">sudo nextcloud.occ config:system:<span class="hljs-built_in">set</span> trusted_domains 1 --value=zzz.com
+sudo nextcloud.disable-https
+sudo <span class="hljs-built_in">rm</span> -rf /var/snap/nextcloud/current/certs
+</code></pre>
+</li>
+<li>
+<p>Install <code class="_codified_">certbot</code> and update <code class="_codified_">certs</code> files.
+</p>
+<pre class="hljs"><code class="bash hljs">sudo snap install certbot
+<span class="hljs-built_in">cd</span> /var/snap/nextcloud/current
+sudo <span class="hljs-built_in">mkdir</span> certs
+sudo <span class="hljs-built_in">cp</span> -a /snap/certbot/current/. /var/snap/nextcloud/current/certs/certbot/
+</code></pre>
+</li>
+<li>
+<p>Update Let's Encrypt for the new domain.
+</p>
+<pre class="hljs"><code class="bash hljs">sudo snap remove certbot
+sudo ufw allow 80,443/tcp
+sudo nextcloud.enable-https lets-encrypt
+</code></pre>
+</li>
+<li>
+<p>Wait until the new domain presents a Nextcloud login page.
+</p>
+<p><a class="center" href="https://ucarecdn.com/5bcda498-7312-4217-bc39-bf84c19203e4/image_892358463.png
+" rel="noopener noreferrer" target="_blank"><img alt="WESTERLIES" src="https://ucarecdn.com/5bcda498-7312-4217-bc39-bf84c19203e4/-/preview/600x600/-/quality/smart_retina/-/format/auto/
+" width="450"></a>
+</p>
+</li>
+</ol>
+</div></div>
+</div></p>
+</section>
+</body>
+</html>
+
