@@ -17,11 +17,9 @@ do
         continue
     fi
     index=$(($index+1))
-    #echo $index "${file%%.html}"
     filename=${file%%.html}
     filename_url="${filename//\%/\%25}"
     newfile="post-$index"
-    #echo $filename $newfile
     mv "$filename.html" "$newfile.html"
     sed -i "s/$filename_url/$newfile/g" *
 done
