@@ -7,8 +7,7 @@ IFS=$'\n\t'
 
 tiddlywiki --rendertiddlers [!is[system]] $:/core/templates/static.tiddler.html static text/plain --rendertiddler $:/core/templates/static.template.css static/static.css text/plain
 
-rm -r ./westerlies
-mkdir ./westerlies
+rm ./westerlies/*.html
 cp ./output/static/* ./westerlies/
 
 index=1
@@ -23,6 +22,6 @@ do
     filename_url="${filename//\%/\%25}"
     newfile="post-$index"
     mv "$filename.html" "$newfile.html"
-    sed -i "s/\"$filename_url.html\"/\"$newfile.html\"/g" *
+    sed -i "s/\"$filename_url.html\"/\"$newfile.html\"/g" *.html
 done
 cd ..
