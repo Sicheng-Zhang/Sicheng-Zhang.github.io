@@ -14,9 +14,10 @@ index=1
 cd ./westerlies
 for file in *%*.html
 do
-    if [[ "$file" == "./westerlies/index.html" || "$file" == "./westerlies/archive.html" || "$file" == "./westerlies/index.html" || "$file" == "./westerlies/%2FUsers%2Fsicheng%2FWeber%2FRebello%2FMich%2FGithubPage%2Ftiddlers%2F%24__StoryList.tid.html" ]]; then
-        continue
-    fi
+    #if [[ "$file" == "./westerlies/index.html" || "$file" == "./westerlies/archive.html" || "$file" == "./westerlies/index.html" || "$file" == "./westerlies/%2FUsers%2Fsicheng%2FWeber%2FRebello%2FMich%2FGithubPage%2Ftiddlers%2F%24__StoryList.tid.html" ]]; then
+    #if [[ "$file" == "./westerlies/index.html" || "$file" == "./westerlies/archive.html" ]]; then
+        #continue
+    #fi
     index=$(($index+1))
     filename=${file%%.html}
     filename_url="${filename//\%/\%25}"
