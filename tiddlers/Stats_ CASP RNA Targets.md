@@ -10,6 +10,8 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
 |                            Target                            | Description                    | Length |   Ligand    |     Type      | PDB                                         |                           Ranking                            |
 | :----------------------------------------------------------: | :----------------------------- | :----: | :---------: | :-----------: | ------------------------------------------- | :----------------------------------------------------------: |
 | [R1203](https://predictioncenter.org/casp16/target.cgi?id=55&view=rna) | Rev response element stem-loop II |   134   |      N      |     HIV     |  |  |
+| [R1205](https://www.predictioncenter.org/casp16/target.cgi?id=53&view=rna) | xrRNA |   59   |      N      |     ST9     |  |  |
+
 
 <br><br>
 
