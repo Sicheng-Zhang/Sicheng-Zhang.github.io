@@ -1,33 +1,32 @@
 created: 20240306201244831
-modified: 20240401030631174
+modified: 20240508221227099
 tags: Memory
 title: Apartment
 type: text/vnd.tiddlywiki
 
 <head>
 <style>
-.fling-minislide {width:370px; height: 370px; overflow:hidden; position:relative; }
-.fling-minislide img{ position:absolute; animation:fling-minislide 24s infinite; opacity:0; width: 100%; height: auto;}
+.cssslide {width: 600px; height: 600px; overflow:hidden; position:relative; }
+.cssslide img{ position:absolute; animation:cssslide 22s infinite; opacity:0; width: 100%; height: auto;}
 
-@keyframes fling-minislide {5%{opacity:1;} 50%{opacity:0;}}
-.fling-minislide img:nth-child(1){animation-delay:0s;}
-.fling-minislide img:nth-child(2){animation-delay:2s;}
-.fling-minislide img:nth-child(3){animation-delay:4s;}
-.fling-minislide img:nth-child(4){animation-delay:6s;}
-.fling-minislide img:nth-child(5){animation-delay:8s;}
-.fling-minislide img:nth-child(6){animation-delay:10s;}
-.fling-minislide img:nth-child(7){animation-delay:12s;}
-.fling-minislide img:nth-child(8){animation-delay:14s;}
-.fling-minislide img:nth-child(9){animation-delay:16s;}
-.fling-minislide img:nth-child(10){animation-delay:18s;}
-.fling-minislide img:nth-child(11){animation-delay:20s;}
-.fling-minislide img:nth-child(12){animation-delay:22s;}
-
+@keyframes cssslide {5%{opacity:1;} 50%{opacity:0;}}
+.cssslide img:nth-child(1){animation-delay:0s;}
+.cssslide img:nth-child(2){animation-delay:1.5s;}
+.cssslide img:nth-child(3){animation-delay:3s;}
+.cssslide img:nth-child(4){animation-delay:4.5s;}
+.cssslide img:nth-child(5){animation-delay:6s;}
+.cssslide img:nth-child(6){animation-delay:7.5s;}
+.cssslide img:nth-child(7){animation-delay:9s;}
+.cssslide img:nth-child(8){animation-delay:10.5s;}
+.cssslide img:nth-child(9){animation-delay:12s;}
+.cssslide img:nth-child(10){animation-delay:13.5s;}
+.cssslide img:nth-child(11){animation-delay:15s;}
+.cssslide img:nth-child(12){animation-delay:16.5s;}
 
 </style>
 </head>
 
-<div class="fling-minislide">
+<div class="cssslide">
   <img src="https://ucarecdn.com/a8e6981e-ae75-4cdc-a610-b63b233c2020/-/preview/1000x750" alt="Slide 1" />
 	
   <img src="https://ucarecdn.com/6de47613-e24b-4c7d-be23-5b19353815a2/-/preview/1000x750" alt="Slide 2" />
