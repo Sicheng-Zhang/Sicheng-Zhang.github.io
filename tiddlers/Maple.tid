@@ -1,12 +1,12 @@
 created: 20240117232222940
-modified: 20240508221325525
+modified: 20240508222312664
 tags: Memory
 title: Maple
 type: text/vnd.tiddlywiki
 
 <head>
 <style>
-.cssslide {width: 600px; height: 600px; overflow:hidden; position:relative; }
+.cssslide {width: auto; height: 600px; overflow:hidden; position:relative; }
 .cssslide img{ position:absolute; animation:cssslide 22s infinite; opacity:0; width: 100%; height: auto;}
 
 @keyframes cssslide {5%{opacity:1;} 50%{opacity:0;}}
