@@ -9,10 +9,12 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
 
 |                            Target                            | Description                       | Length | Ligand | Protein | Type | PDB  | Ranking |
 | :----------------------------------------------------------: | :-------------------------------- | :----: | :----: | :-----: | :--: | :--: | :-----: |
-| [R1203](https://predictioncenter.org/casp16/target.cgi?id=55&view=rna) | Rev response element stem-loop II |  134   |   -    |    -    | HIV  |      |         |
+| [R1203](https://predictioncenter.org/casp16/target.cgi?id=55&view=rna) | RRE stem-loop II |  134   |   -    |    -    | HIV  |      |         |
 | [R1205](https://www.predictioncenter.org/casp16/target.cgi?id=53&view=rna) | xrRNA                             |   59   |   -    |    -    | ST9  |      |         |
 | [R1209](https://www.predictioncenter.org/casp16/target.cgi?id=66&view=rna) | HIV-I RRE intact stem-loop II     |   72   |   -    |    [✓](https://www.predictioncenter.org/casp16/target.cgi?id=65&view=all)    |  -   |      |         |
-| [R1211](https://predictioncenter.org/casp16/target.cgi?id=71&view=rna) | CVB3 cloverleaf RNA in complex    |   90   |   -    |    [✓](https://www.predictioncenter.org/casp16/target.cgi?id=70&view=all)    |  -   |      |         |
+| [R1211](https://predictioncenter.org/casp16/target.cgi?id=71&view=rna) | CVB3 cloverleaf in complex    |   90   |   -    |    [✓](https://www.predictioncenter.org/casp16/target.cgi?id=70&view=all)    |  -   |      |         |
+| [R1212](https://predictioncenter.org/casp16/target.cgi?id=74&view=rna) | Fanzor2 ternary structure    |   247   |   -    |    [✓](https://predictioncenter.org/casp16/target.cgi?id=73&view=all)    |  Mimivirus
+   |      |         |
 
 
 <br><br>
