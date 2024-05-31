@@ -11,9 +11,9 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
 | :---------------------------------------------------------- | :-------------------------------- | :----: | :----: | :-----: | :--: | :--: | :-----: |
 | [R1203](https://predictioncenter.org/casp16/target.cgi?id=55&view=rna) | RRE stem-loop II |  134   |   -    |    -    | HIV  |      |         |
 | [R1205](https://www.predictioncenter.org/casp16/target.cgi?id=53&view=rna) | xrRNA                             |   59   |   -    |    -    | ST9  |      |         |
-| [R1209](https://www.predictioncenter.org/casp16/target.cgi?id=66&view=rna) | HIV-I RRE stem-loop II     |   72   |   -    |    [M1209](https://www.predictioncenter.org/casp16/target.cgi?id=65&view=all)    |  -   |      |         |
-| [R1211](https://predictioncenter.org/casp16/target.cgi?id=71&view=rna) | CVB3 cloverleaf in complex    |   90   |   -    |    [M1211](https://www.predictioncenter.org/casp16/target.cgi?id=70&view=all)    |  -   |      |         |
-| [R1212](https://predictioncenter.org/casp16/target.cgi?id=74&view=rna) | Fanzor2 ternary structure    |   247   |   -    |    [M1212](https://predictioncenter.org/casp16/target.cgi?id=73&view=all)    |  Mimivirus
+| [R1209](https://www.predictioncenter.org/casp16/target.cgi?id=66&view=rna) | RRE stem-loop II     |   72   |   -    |    [M1209](https://www.predictioncenter.org/casp16/target.cgi?id=65&view=all)    |  -   |      |         |
+| [R1211](https://predictioncenter.org/casp16/target.cgi?id=71&view=rna) | CVB3 cloverleaf    |   90   |   -    |    [M1211](https://www.predictioncenter.org/casp16/target.cgi?id=70&view=all)    |  -   |      |         |
+| [R1212](https://predictioncenter.org/casp16/target.cgi?id=74&view=rna) | Fanzor2 ternary    |   247   |   -    |    [M1212](https://predictioncenter.org/casp16/target.cgi?id=73&view=all)    |  Mimivirus
    |      |         |
 |  -  |   Tetrameric complex   |   21    |  -  | [M1216](https://predictioncenter.org/casp16/target.cgi?id=80&view=rna)    |  Geobacter
    |      |         |
@@ -25,6 +25,18 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
    |      |         |
 |  [R1224s3](https://predictioncenter.org/casp16/target.cgi?id=98&view=rna)  |   RNase P complex   |   86    |  -  | [M1224](https://predictioncenter.org/casp16/target.cgi?id=96&view=rna)    |  E.faecium
    |      |         |
+|  -  |   SPbeta_int_DNA   |   663    |  -  | [M1228v1](https://www.predictioncenter.org/casp16/target.cgi?id=108&view=rna)    |  Bacillus subtilis
+   |      |         |
+|  -  |   SPbeta_int_DNA   |   663    |  -  | [M1228v2](https://www.predictioncenter.org/casp16/target.cgi?id=109&view=rna)    |  Bacillus subtilis
+   |      |         |
+|  [R1241](https://www.predictioncenter.org/casp16/target.cgi?id=104&view=rna)  |   groupII intron   |   480    |  -  | -    |  Oceanobacillus
+   |      |         |
+|  [R1242](https://www.predictioncenter.org/casp16/target.cgi?id=119&view=rna)  |   RaiA motif   |   205    |  -  | -    |  Clostridium
+   |      |    
+|  [R1248](https://www.predictioncenter.org/casp16/target.cgi?id=124&view=rna)  |   GOLLD 3' env46   |   407    |  -  | -    |  sampling
+   |      |    
+	 
+
 
 <br><br>
 
