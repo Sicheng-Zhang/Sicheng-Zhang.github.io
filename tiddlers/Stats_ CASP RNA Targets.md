@@ -33,9 +33,17 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
    |      |         |
 |  [R1242](https://www.predictioncenter.org/casp16/target.cgi?id=119&view=rna)  |   RaiA motif   |   205    |  -  | -    |  Clostridium
    |      |    
-|  [R1248](https://www.predictioncenter.org/casp16/target.cgi?id=124&view=rna)  |   GOLLD 3' env46   |   407    |  -  | -    |  sampling
+|  [R1248](https://www.predictioncenter.org/casp16/target.cgi?id=124&view=rna)  |   GOLLD 3' env46   |   407    |  -  | -    |  Environmental
    |      |    
-	 
+|  [R1255](https://www.predictioncenter.org/casp16/target.cgi?id=131&view=rna)  |   SL5 SARS-CoV-2   |   124    |  -  | -    |  SARS-CoV-2
+   |      |    
+|  [R1256](https://www.predictioncenter.org/casp16/target.cgi?id=140&view=rna)  |   SL5 Bt-CoV-HKU5   |   127    |  -  | -    |  Bt-CoV-HKU5
+   |      |    
+|  -  |   SPbeta_intRDF_DNA   |   738    |  -  | [M1239v1](https://www.predictioncenter.org/casp16/target.cgi?id=113&view=rna)    |  Bacillus subtilis
+   |      |         |
+|  -  |   SPbeta_intRDF_DNA   |   738    |  -  | [M1239v2](https://www.predictioncenter.org/casp16/target.cgi?id=114&view=rna)    |  Bacillus subtilis
+   |      |         |
+
 
 
 <br><br>
