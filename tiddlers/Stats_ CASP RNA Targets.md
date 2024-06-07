@@ -43,6 +43,9 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
    |      |         |
 |  -  |   SPbeta_intRDF_DNA   |   738    |  -  | [M1239v2](https://www.predictioncenter.org/casp16/target.cgi?id=114&view=rna)    |  Bacillus subtilis
    |      |         |
+|  [R1260](https://www.predictioncenter.org/casp16/target.cgi?id=155&view=rna)  |   ribozyme   |   387    |  -  | -    |  tetrahymena
+   |      |
+
 
 
 
