@@ -45,8 +45,12 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
    |      |         |
 |  [R1260](https://www.predictioncenter.org/casp16/target.cgi?id=155&view=rna)  |   ribozyme   |   387    |  -  | -    |  tetrahymena
    |      |
-
-
+|  [R1261](https://www.predictioncenter.org/casp16/target.cgi?id=174&view=rna)  |   ZTP riboswitch   |   89    |  AMZ  | -    |  Clostridium
+   |      |
+|  [R1262](https://www.predictioncenter.org/casp16/target.cgi?id=175&view=rna)  |   ZTP riboswitch   |   89    |  AIC  | -    |  Clostridium
+   |      |
+|  [R0254](https://www.predictioncenter.org/casp16/target.cgi?id=171&view=rna)  |   GOLLD 3' env38   |   413    |  -  | -    |  Environmental
+   |      |
 
 
 <br><br>
