@@ -51,6 +51,17 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
    |      |
 |  [R0254](https://www.predictioncenter.org/casp16/target.cgi?id=171&view=rna)  |   GOLLD 3' env38   |   413    |  -  | -    |  Environmental
    |      |
+|  [R0252](https://www.predictioncenter.org/casp16/target.cgi?id=179&view=rna)  |   ROOL UCC118   |   520    |  -  | -    |  Lactobacillus
+   |      |
+|  [R0253](https://www.predictioncenter.org/casp16/target.cgi?id=180&view=rna)  |   ROOL env209   |   574    |  -  | -    |  Environmental
+   |      |
+|  -  |   XauSPARDA   |   996    |  -  | [M0268](https://www.predictioncenter.org/casp16/target.cgi?id=195&view=rna)    |  Xanthobacter
+   |      |
+|  [R1263](https://www.predictioncenter.org/casp16/target.cgi?id=187&view=rna)  |   ZTP riboswitch   |   64    |  AICA  | -    |  odontolytica
+   |      |
+|  [R1264](https://www.predictioncenter.org/casp16/target.cgi?id=188&view=rna)  |   ZTP riboswitch   |   64    |  AICA  | -    |  odontolytica
+   |      |
+
 
 
 <br><br>
