@@ -39,9 +39,9 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
    |      |    
 |  [R1256](https://www.predictioncenter.org/casp16/target.cgi?id=140&view=rna)  |   SL5 Bt-CoV-HKU5   |   127    |  -  | -    |  Bt-CoV-HKU5
    |      |    
-|  -  |   SPbeta_intRDF_DNA   |   738    |  -  | [M1239v1](https://www.predictioncenter.org/casp16/target.cgi?id=113&view=rna)    |  Bacillus subtilis
+|  -  |   SPbeta_intRDF   |   738    |  -  | [M1239v1](https://www.predictioncenter.org/casp16/target.cgi?id=113&view=rna)    |  Bacillus subtilis
    |      |         |
-|  -  |   SPbeta_intRDF_DNA   |   738    |  -  | [M1239v2](https://www.predictioncenter.org/casp16/target.cgi?id=114&view=rna)    |  Bacillus subtilis
+|  -  |   SPbeta_intRDF   |   738    |  -  | [M1239v2](https://www.predictioncenter.org/casp16/target.cgi?id=114&view=rna)    |  Bacillus subtilis
    |      |         |
 |  [R1260](https://www.predictioncenter.org/casp16/target.cgi?id=155&view=rna)  |   ribozyme   |   387    |  -  | -    |  tetrahymena
    |      |
@@ -49,19 +49,36 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
    |      |
 |  [R1262](https://www.predictioncenter.org/casp16/target.cgi?id=175&view=rna)  |   ZTP riboswitch   |   89    |  AIC  | -    |  Clostridium
    |      |
-|  [R0254](https://www.predictioncenter.org/casp16/target.cgi?id=171&view=rna)  |   GOLLD 3' env38   |   413    |  -  | -    |  Environmental
+|  [R0254](https://www.predictioncenter.org/casp16/target.cgi?id=171&view=rna)  |   GOLLD 3' env38   |   UNK    |  -  | -    |  Environmental
    |      |
-|  [R0252](https://www.predictioncenter.org/casp16/target.cgi?id=179&view=rna)  |   ROOL UCC118   |   520    |  -  | -    |  Lactobacillus
+|  [R0252](https://www.predictioncenter.org/casp16/target.cgi?id=179&view=rna)  |   ROOL UCC118   |   UNK    |  -  | -    |  Lactobacillus
    |      |
-|  [R0253](https://www.predictioncenter.org/casp16/target.cgi?id=180&view=rna)  |   ROOL env209   |   574    |  -  | -    |  Environmental
-   |      |
-|  -  |   XauSPARDA   |   996    |  -  | [M0268](https://www.predictioncenter.org/casp16/target.cgi?id=195&view=rna)    |  Xanthobacter
+|  [R0253](https://www.predictioncenter.org/casp16/target.cgi?id=180&view=rna)  |   ROOL env209   |   UNK    |  -  | -    |  Environmental
    |      |
 |  [R1263](https://www.predictioncenter.org/casp16/target.cgi?id=187&view=rna)  |   ZTP riboswitch   |   64    |  AICA  | -    |  odontolytica
    |      |
 |  [R1264](https://www.predictioncenter.org/casp16/target.cgi?id=188&view=rna)  |   ZTP riboswitch   |   64    |  AICA  | -    |  odontolytica
    |      |
-
+|  -  |   XauSPARDA   |   UNK    |  -  | [M0268](https://www.predictioncenter.org/casp16/target.cgi?id=195&view=rna)    |  Xanthobacter
+   |      |
+|  [R1271](https://www.predictioncenter.org/casp16/target.cgi?id=239&view=rna)  |   RECC   |   77    |  -  | [M1271](https://www.predictioncenter.org/casp16/target.cgi?id=230&view=rna)    |  trypanosoma
+   |      |
+|  [R0250](https://www.predictioncenter.org/casp16/target.cgi?id=228&view=rna)  |   GOLLD full   |   UNK    |  -  | -    |  trypanosoma
+   |      |
+|  [R0251](https://www.predictioncenter.org/casp16/target.cgi?id=229&view=rna)  |   GOLLD full   |   UNK    |  -  | -    |  trypanosoma
+   |      |
+|  [R1254](https://www.predictioncenter.org/casp16/target.cgi?id=227&view=rna)  |   GOLLD 3' env38   |   413 X 14    |  -  | -    |  Environmental
+   |      |
+|  [R1252](https://www.predictioncenter.org/casp16/target.cgi?id=243&view=rna)  |   ROOL UCC118   |   520 X 6    |  -  | -    |  Lactobacillus
+   |      |
+|  [R1253v1](https://www.predictioncenter.org/casp16/target.cgi?id=244&view=rna)  |   ROOL env209   |   574 X 8    |  -  | -    |  Environmental
+   |      |
+|  [R1253v2](https://www.predictioncenter.org/casp16/target.cgi?id=245&view=rna)  |   ROOL env209   |   574 X 8    |  -  | -    |  Environmental
+   |      |
+|  -  |   A0A026WM60   |   UNK    |  -  | [M0276](https://www.predictioncenter.org/casp16/target.cgi?id=265&view=rna)    |  raider ant
+   |      |
+|  -  |   XauSPARDA   |   7716    |  -  | [M1268](https://www.predictioncenter.org/casp16/target.cgi?id=270&view=rna)    |  Xanthobacter
+   |      |
 
 
 <br><br>
