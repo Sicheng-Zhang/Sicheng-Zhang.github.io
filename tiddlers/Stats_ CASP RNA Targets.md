@@ -79,6 +79,22 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
    |      |
 |  -  |   XauSPARDA   |   7716    |  -  | [M1268](https://www.predictioncenter.org/casp16/target.cgi?id=270&view=rna)    |  Xanthobacter
    |      |
+|  [R1286](https://predictioncenter.org/casp16/target.cgi?id=276&view=rna)  |   ncRNA   |   526    |  -  | -    |  Lactobacillus
+   |      |
+|  [R0281](https://predictioncenter.org/casp16/target.cgi?id=277&view=rna)  |   	2F RNA 6-helix   |   UNK    |  -  | -    |  -
+   |      |
+|  -  |   Spike-RBD/Aptamer   |   249    |  -  | [M1282](https://predictioncenter.org/casp16/target.cgi?id=282&view=rna)    |  -
+   |      |
+|  -  |   Q0X0A9_STRLS   |   UNK    |  -  | [M0287](https://predictioncenter.org/casp16/target.cgi?id=286&view=rna)    |  Streptomyces
+   |      |
+|  [R1250](https://predictioncenter.org/casp16/target.cgi?id=283&view=rna)  |   GOLLD full   |  744 x 6    |  -  | -    |  Environmental
+   |      |
+|  [R1251](https://predictioncenter.org/casp16/target.cgi?id=284&view=rna)  |   GOLLD full   |   833 X 14    |  -  | -    |  Environmental
+   |      |
+|  [R0283](https://predictioncenter.org/casp16/target.cgi?id=289&view=rna)  |   ncRNA   |   UNK    |  -  | -    |  Enterococcus
+   |      |
+|  [R0285](https://predictioncenter.org/casp16/target.cgi?id=291&view=rna)  |   OLE   |   UNK    |  -  | -    |  Clostridium
+   |      |
 
 
 <br><br>
