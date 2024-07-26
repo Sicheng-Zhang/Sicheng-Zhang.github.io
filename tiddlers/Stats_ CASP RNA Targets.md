@@ -7,94 +7,53 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
 
 ### CASP 16:
 
-|                            Target                            | Description                       | Length | Ligand | Protein | Type | PDB  | Ranking |
-| :---------------------------------------------------------- | :-------------------------------- | :----: | :----: | :-----: | :--: | :--: | :-----: |
-| [R1203](https://predictioncenter.org/casp16/target.cgi?id=55&view=rna) | RRE stem-loop II |  134   |   -    |    -    | HIV  |      |         |
-| [R1205](https://www.predictioncenter.org/casp16/target.cgi?id=53&view=rna) | xrRNA                             |   59   |   -    |    -    | ST9  |      |         |
-| [R1209](https://www.predictioncenter.org/casp16/target.cgi?id=66&view=rna) | RRE stem-loop II     |   72   |   -    |    [M1209](https://www.predictioncenter.org/casp16/target.cgi?id=65&view=all)    |  -   |      |         |
-| [R1211](https://predictioncenter.org/casp16/target.cgi?id=71&view=rna) | CVB3 cloverleaf    |   90   |   -    |    [M1211](https://www.predictioncenter.org/casp16/target.cgi?id=70&view=all)    |  -   |      |         |
-| [R1212](https://predictioncenter.org/casp16/target.cgi?id=74&view=rna) | Fanzor2 ternary    |   247   |   -    |    [M1212](https://predictioncenter.org/casp16/target.cgi?id=73&view=all)    |  Mimivirus
-   |      |         |
-|  -  |   Tetrameric complex   |   21    |  -  | [M1216](https://predictioncenter.org/casp16/target.cgi?id=80&view=rna)    |  Geobacter
-   |      |         |
-|  [R1221s2](https://predictioncenter.org/casp16/target.cgi?id=94&view=rna)  |   RNase P complex   |   398    |  -  | [M1221](https://predictioncenter.org/casp16/target.cgi?id=93&view=rna)    |  S.aureus
-   |      |         |
-|  [R1221s3](https://predictioncenter.org/casp16/target.cgi?id=95&view=rna)  |   RNase P complex   |   86    |  -  | [M1221](https://predictioncenter.org/casp16/target.cgi?id=93&view=rna)    |  S.aureus
-   |      |         |
-|  [R1224s2](https://predictioncenter.org/casp16/target.cgi?id=97&view=rna)  |   RNase P complex   |   395    |  -  | [M1224](https://predictioncenter.org/casp16/target.cgi?id=96&view=rna)    |  E.faecium
-   |      |         |
-|  [R1224s3](https://predictioncenter.org/casp16/target.cgi?id=98&view=rna)  |   RNase P complex   |   86    |  -  | [M1224](https://predictioncenter.org/casp16/target.cgi?id=96&view=rna)    |  E.faecium
-   |      |         |
-|  -  |   SPbeta_int_DNA   |   663    |  -  | [M1228v1](https://www.predictioncenter.org/casp16/target.cgi?id=108&view=rna)    |  Bacillus subtilis
-   |      |         |
-|  -  |   SPbeta_int_DNA   |   663    |  -  | [M1228v2](https://www.predictioncenter.org/casp16/target.cgi?id=109&view=rna)    |  Bacillus subtilis
-   |      |         |
-|  [R1241](https://www.predictioncenter.org/casp16/target.cgi?id=104&view=rna)  |   groupII intron   |   480    |  -  | -    |  Oceanobacillus
-   |      |         |
-|  [R1242](https://www.predictioncenter.org/casp16/target.cgi?id=119&view=rna)  |   RaiA motif   |   205    |  -  | -    |  Clostridium
-   |      |    
-|  [R1248](https://www.predictioncenter.org/casp16/target.cgi?id=124&view=rna)  |   GOLLD 3' env46   |   407    |  -  | -    |  Environmental
-   |      |    
-|  [R1255](https://www.predictioncenter.org/casp16/target.cgi?id=131&view=rna)  |   SL5 SARS-CoV-2   |   124    |  -  | -    |  SARS-CoV-2
-   |      |    
-|  [R1256](https://www.predictioncenter.org/casp16/target.cgi?id=140&view=rna)  |   SL5 Bt-CoV-HKU5   |   127    |  -  | -    |  Bt-CoV-HKU5
-   |      |    
-|  -  |   SPbeta_intRDF   |   738    |  -  | [M1239v1](https://www.predictioncenter.org/casp16/target.cgi?id=113&view=rna)    |  Bacillus subtilis
-   |      |         |
-|  -  |   SPbeta_intRDF   |   738    |  -  | [M1239v2](https://www.predictioncenter.org/casp16/target.cgi?id=114&view=rna)    |  Bacillus subtilis
-   |      |         |
-|  [R1260](https://www.predictioncenter.org/casp16/target.cgi?id=155&view=rna)  |   ribozyme   |   387    |  -  | -    |  tetrahymena
-   |      |
-|  [R1261](https://www.predictioncenter.org/casp16/target.cgi?id=174&view=rna)  |   ZTP riboswitch   |   89    |  AMZ  | -    |  Clostridium
-   |      |
-|  [R1262](https://www.predictioncenter.org/casp16/target.cgi?id=175&view=rna)  |   ZTP riboswitch   |   89    |  AIC  | -    |  Clostridium
-   |      |
-|  [R0254](https://www.predictioncenter.org/casp16/target.cgi?id=171&view=rna)  |   GOLLD 3' env38   |   UNK    |  -  | -    |  Environmental
-   |      |
-|  [R0252](https://www.predictioncenter.org/casp16/target.cgi?id=179&view=rna)  |   ROOL UCC118   |   UNK    |  -  | -    |  Lactobacillus
-   |      |
-|  [R0253](https://www.predictioncenter.org/casp16/target.cgi?id=180&view=rna)  |   ROOL env209   |   UNK    |  -  | -    |  Environmental
-   |      |
-|  [R1263](https://www.predictioncenter.org/casp16/target.cgi?id=187&view=rna)  |   ZTP riboswitch   |   64    |  AICA  | -    |  odontolytica
-   |      |
-|  [R1264](https://www.predictioncenter.org/casp16/target.cgi?id=188&view=rna)  |   ZTP riboswitch   |   64    |  AICA  | -    |  odontolytica
-   |      |
-|  -  |   XauSPARDA   |   UNK    |  -  | [M0268](https://www.predictioncenter.org/casp16/target.cgi?id=195&view=rna)    |  Xanthobacter
-   |      |
-|  [R1271](https://www.predictioncenter.org/casp16/target.cgi?id=239&view=rna)  |   RECC   |   77    |  -  | [M1271](https://www.predictioncenter.org/casp16/target.cgi?id=230&view=rna)    |  trypanosoma
-   |      |
-|  [R0250](https://www.predictioncenter.org/casp16/target.cgi?id=228&view=rna)  |   GOLLD full   |   UNK    |  -  | -    |  trypanosoma
-   |      |
-|  [R0251](https://www.predictioncenter.org/casp16/target.cgi?id=229&view=rna)  |   GOLLD full   |   UNK    |  -  | -    |  trypanosoma
-   |      |
-|  [R1254](https://www.predictioncenter.org/casp16/target.cgi?id=227&view=rna)  |   GOLLD 3' env38   |   413 X 14    |  -  | -    |  Environmental
-   |      |
-|  [R1252](https://www.predictioncenter.org/casp16/target.cgi?id=243&view=rna)  |   ROOL UCC118   |   520 X 6    |  -  | -    |  Lactobacillus
-   |      |
-|  [R1253v1](https://www.predictioncenter.org/casp16/target.cgi?id=244&view=rna)  |   ROOL env209   |   574 X 8    |  -  | -    |  Environmental
-   |      |
-|  [R1253v2](https://www.predictioncenter.org/casp16/target.cgi?id=245&view=rna)  |   ROOL env209   |   574 X 8    |  -  | -    |  Environmental
-   |      |
-|  -  |   A0A026WM60   |   UNK    |  -  | [M0276](https://www.predictioncenter.org/casp16/target.cgi?id=265&view=rna)    |  raider ant
-   |      |
-|  -  |   XauSPARDA   |   7716    |  -  | [M1268](https://www.predictioncenter.org/casp16/target.cgi?id=270&view=rna)    |  Xanthobacter
-   |      |
-|  [R1286](https://predictioncenter.org/casp16/target.cgi?id=276&view=rna)  |   ncRNA   |   526    |  -  | -    |  Lactobacillus
-   |      |
-|  [R0281](https://predictioncenter.org/casp16/target.cgi?id=277&view=rna)  |   	2F RNA 6-helix   |   UNK    |  -  | -    |  -
-   |      |
-|  -  |   Spike-RBD/Aptamer   |   249    |  -  | [M1282](https://predictioncenter.org/casp16/target.cgi?id=282&view=rna)    |  -
-   |      |
-|  -  |   Q0X0A9_STRLS   |   UNK    |  -  | [M0287](https://predictioncenter.org/casp16/target.cgi?id=286&view=rna)    |  Streptomyces
-   |      |
-|  [R1250](https://predictioncenter.org/casp16/target.cgi?id=283&view=rna)  |   GOLLD full   |  744 x 6    |  -  | -    |  Environmental
-   |      |
-|  [R1251](https://predictioncenter.org/casp16/target.cgi?id=284&view=rna)  |   GOLLD full   |   833 X 14    |  -  | -    |  Environmental
-   |      |
-|  [R0283](https://predictioncenter.org/casp16/target.cgi?id=289&view=rna)  |   ncRNA   |   UNK    |  -  | -    |  Enterococcus
-   |      |
-|  [R0285](https://predictioncenter.org/casp16/target.cgi?id=291&view=rna)  |   OLE   |   UNK    |  -  | -    |  Clostridium
-   |      |
+
+| Target                                                       |                           Complex                            |                            Stage0                            | Description          | Residue | Ligand  |              Stoich.               | PDB  |
+| :----------------------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :------------------- | :-----: | :-----: | :--------------------------------: | :--: |
+| [R1203](https://predictioncenter.org/casp16/target.cgi?id=55&view=rna) |                              -                               |                              -                               | RRE SL II            |   134   |    -    |                 R1                 |      |
+| [R1205](https://www.predictioncenter.org/casp16/target.cgi?id=53&view=rna) |                              -                               |                              -                               | xrRNA                |   59    |    -    |                 R1                 |      |
+| [R1209](https://www.predictioncenter.org/casp16/target.cgi?id=66&view=rna) | [M1209](https://www.predictioncenter.org/casp16/target.cgi?id=65&view=all) |                              -                               | RRE SL II-Fab        |   72    |    -    |               A1B1R1               |      |
+| [R1211](https://predictioncenter.org/casp16/target.cgi?id=71&view=rna) | [M1211](https://www.predictioncenter.org/casp16/target.cgi?id=70&view=all) |                              -                               | Cloverleaf-protease  |   90    |    -    |                A2R1                |      |
+| [R1212](https://predictioncenter.org/casp16/target.cgi?id=74&view=rna) | [M1212](https://predictioncenter.org/casp16/target.cgi?id=73&view=all) |                              -                               | Fanzor2 ternary      |   247   |    -    |           A1R1<br />V1W1           |      |
+| -                                                            | [M1216](https://predictioncenter.org/casp16/target.cgi?id=80&view=rna) |                              -                               | Tetrameric SPARSA    |  1106   |    -    |           A4B4<br />C4D4           |      |
+| [R1221s2](https://predictioncenter.org/casp16/target.cgi?id=94&view=rna) | [M1221](https://predictioncenter.org/casp16/target.cgi?id=93&view=rna) |                              -                               | RNase P: RNA1        |   398   |    -    |               A1R1S1               |      |
+| [R1221s3](https://predictioncenter.org/casp16/target.cgi?id=95&view=rna) | [M1221](https://predictioncenter.org/casp16/target.cgi?id=93&view=rna) |                              -                               | RNase P:  RNA2       |   86    |    -    |               A1R1S1               |      |
+| [R1224s2](https://predictioncenter.org/casp16/target.cgi?id=97&view=rna) | [M1224](https://predictioncenter.org/casp16/target.cgi?id=96&view=rna) |                              -                               | RNase P:  RNA1       |   395   |    -    |               A1R1S1               |      |
+| [R1224s3](https://predictioncenter.org/casp16/target.cgi?id=98&view=rna) | [M1224](https://predictioncenter.org/casp16/target.cgi?id=96&view=rna) |                              -                               | RNase P:  RNA2       |   86    |    -    |               A1R1S1               |      |
+| -                                                            | [M1228v1](https://www.predictioncenter.org/casp16/target.cgi?id=108&view=rna) |                              -                               | SPbeta_int_DNA       |   663   |    -    |          A4B2C2<br />D2E2          |      |
+| -                                                            | [M1228v2](https://www.predictioncenter.org/casp16/target.cgi?id=109&view=rna) |                              -                               | SPbeta_int_DNA       |   663   |    -    |          A4B2C2<br />D2E2          |      |
+| [R1241](https://www.predictioncenter.org/casp16/target.cgi?id=104&view=rna) |                              -                               |                              -                               | groupII intron       |   480   |    -    |                 A1                 |      |
+| [R1242](https://www.predictioncenter.org/casp16/target.cgi?id=119&view=rna) |                              -                               |                              -                               | RaiA motif           |   205   |    -    |                 A1                 |      |
+| [R1248](https://www.predictioncenter.org/casp16/target.cgi?id=124&view=rna) |                              -                               |                              -                               | GOLLD 3' env46       |   407   |    -    |                 A1                 |      |
+| [R1255](https://www.predictioncenter.org/casp16/target.cgi?id=131&view=rna) |                              -                               |                              -                               | SL5 SARS-CoV-2       |   124   |    -    |                 A1                 |      |
+| [R1256](https://www.predictioncenter.org/casp16/target.cgi?id=140&view=rna) |                              -                               |                              -                               | SL5 Bt-CoV-HKU5      |   127   |    -    |                 A1                 |      |
+| -                                                            | [M1239v1](https://www.predictioncenter.org/casp16/target.cgi?id=113&view=rna) |                              -                               | SPbeta_intRDF        |   738   |    -    |          A4B2C2<br />D2E2          |      |
+| -                                                            | [M1239v2](https://www.predictioncenter.org/casp16/target.cgi?id=114&view=rna) |                              -                               | SPbeta_intRDF        |   738   |    -    |          A4B2C2<br />D2E2          |      |
+| [R1260](https://www.predictioncenter.org/casp16/target.cgi?id=155&view=rna) |                              -                               |                              -                               | ribozyme             |   387   |    -    |                 A1                 |      |
+| [R1261](https://www.predictioncenter.org/casp16/target.cgi?id=174&view=rna) |                              -                               |                              -                               | ZTP riboswitch       |   89    |   AMZ   |                 A1                 |      |
+| [R1262](https://www.predictioncenter.org/casp16/target.cgi?id=175&view=rna) |                              -                               |                              -                               | ZTP riboswitch       |   89    |   AIC   |                 A1                 |      |
+| [R1254](https://www.predictioncenter.org/casp16/target.cgi?id=227&view=rna) |                              -                               | [R0254](https://www.predictioncenter.org/casp16/target.cgi?id=171&view=rna) | GOLLD 3' env38       |   413   |    -    |                R14                 |      |
+| [R1252](https://www.predictioncenter.org/casp16/target.cgi?id=243&view=rna) |                              -                               | [R0252](https://www.predictioncenter.org/casp16/target.cgi?id=179&view=rna) | ROOL UCC118          |   520   |    -    |                 R6                 |      |
+| [R1253v1](https://www.predictioncenter.org/casp16/target.cgi?id=244&view=rna) |                              -                               | [R0253](https://www.predictioncenter.org/casp16/target.cgi?id=180&view=rna) | ROOL env209          |   574   |    -    |                 R8                 |      |
+| [R1253v2](https://www.predictioncenter.org/casp16/target.cgi?id=245&view=rna) |                              -                               | [R0253](https://www.predictioncenter.org/casp16/target.cgi?id=180&view=rna) | ROOL env209          |   574   |    -    |                 R8                 |      |
+| [R1263](https://www.predictioncenter.org/casp16/target.cgi?id=187&view=rna) |                              -                               |                                                              | ZTP riboswitch       |   64    |  AICA   |                 A1                 |      |
+| [R1264](https://www.predictioncenter.org/casp16/target.cgi?id=188&view=rna) |                              -                               |                                                              | ZTP riboswitch       |   64    |  AICA   |                 A1                 |      |
+| -                                                            | [M1268](https://www.predictioncenter.org/casp16/target.cgi?id=270&view=rna) | [M0268](https://www.predictioncenter.org/casp16/target.cgi?id=195&view=rna) | XauSPARDA            |   996   |    -    |         A8B8C8<br />D8E1F1         |      |
+| [R1271](https://www.predictioncenter.org/casp16/target.cgi?id=239&view=rna) | [M1271](https://www.predictioncenter.org/casp16/target.cgi?id=230&view=rna) |                              -                               | RECC                 |   77    |    -    | A1B1C1D1<br />E1F2G2H1<br />I1J5R1 |      |
+| [R1250](https://predictioncenter.org/casp16/target.cgi?id=283&view=rna) |                              -                               | [R0250](https://www.predictioncenter.org/casp16/target.cgi?id=228&view=rna) | GOLLD full           |   744   |    -    |                 R6                 |      |
+| [R1251](https://predictioncenter.org/casp16/target.cgi?id=284&view=rna) |                              -                               | [R0251](https://www.predictioncenter.org/casp16/target.cgi?id=229&view=rna) | GOLLD full           |   833   |    -    |                R14                 |      |
+| -                                                            | [M1276](https://predictioncenter.org/casp16/target.cgi?id=304&view=rna) | [M0276](https://www.predictioncenter.org/casp16/target.cgi?id=265&view=rna) | protein-ssDNA        |   229   |    -    |                A1B1                |      |
+| [R1286](https://predictioncenter.org/casp16/target.cgi?id=276&view=rna) |                              -                               |                                                              | ncRNA                |   526   |    -    |                 A1                 |      |
+| [R1281](https://predictioncenter.org/casp16/target.cgi?id=322&view=rna) |                              -                               | [R0281](https://predictioncenter.org/casp16/target.cgi?id=277&view=rna) | 6-helix bundle       |   718   |    -    |                 A2                 |      |
+| -                                                            | [M1282](https://predictioncenter.org/casp16/target.cgi?id=282&view=rna) |                                                              | RBD/Aptamer          |   249   |    -    |                A1B1                |      |
+| -                                                            | [M1287](https://predictioncenter.org/casp16/target.cgi?id=330&view=rna) | [M0287](https://predictioncenter.org/casp16/target.cgi?id=286&view=rna) | Q0X0A9_STRLS         |   852   |    -    |                A2D2                |      |
+|                                                              |                              -                               | [R0283](https://predictioncenter.org/casp16/target.cgi?id=289&view=rna) | ncRNA                |   580   |    -    |                                    |      |
+|                                                              |                              -                               | [R0285](https://predictioncenter.org/casp16/target.cgi?id=291&view=rna) | OLE                  |   577   |    -    |                                    |      |
+|                                                              |                              -                               | [R0290](https://predictioncenter.org/casp16/target.cgi?id=308&view=rna) | HYER1-withoutTRS     |   627   |    -    |                                    |      |
+| [R1289](https://predictioncenter.org/casp16/target.cgi?id=306&view=rna) |                              -                               |                              -                               | Precursor tRNA       |   284   |    -    |                                    |      |
+| [R1288](https://predictioncenter.org/casp16/target.cgi?id=303&view=rna) |                              -                               |                              -                               | SAMURI               |   58    | SAH, MG |                                    |      |
+| [R1291](https://predictioncenter.org/casp16/target.cgi?id=309&view=rna) |                              -                               |                              -                               | O.I.intron-full      |   480   |    -    |                                    |      |
+| [R1293](https://predictioncenter.org/casp16/target.cgi?id=321&view=rna) | [M1293](https://predictioncenter.org/casp16/target.cgi?id=320&view=rna) |                              -                               | Translation enhancer |   82    |    -    |                                    |      |
 
 
 <br><br>
