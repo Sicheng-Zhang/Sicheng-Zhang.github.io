@@ -7,7 +7,6 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
 
 ### CASP 16:
 
-
 | Target                                                       |                           Complex                            |                            Stage0                            | Description          | Residue | Ligand  |              Stoich.               | PDB  |
 | :----------------------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :------------------- | :-----: | :-----: | :--------------------------------: | :--: |
 | [R1203](https://predictioncenter.org/casp16/target.cgi?id=55&view=rna) |                              -                               |                              -                               | RRE SL II            |   134   |    -    |                 R1                 |      |
@@ -57,12 +56,11 @@ Data from the public page of CASP: [https://www.predictioncenter.org/](https://w
 | [R1291](https://predictioncenter.org/casp16/target.cgi?id=309&view=rna) |                              -                               |                              -                               | O.I.intron-full      |   480   |    -    |                 A1                 |      |
 | [R1293](https://predictioncenter.org/casp16/target.cgi?id=321&view=rna) | [M1293](https://predictioncenter.org/casp16/target.cgi?id=320&view=rna) |                              -                               | Translation enhancer |   82    |    -    |               A1B1R1               |      |
 | [R1296](https://predictioncenter.org/casp16/target.cgi?id=334&view=rna) | [M1296](https://predictioncenter.org/casp16/target.cgi?id=333&view=rna) |                              -                               | RRE SL II-Fab        |   520   |    -    |                 A1                 |      |
-
+| -                                                            | [M1297](https://predictioncenter.org/casp16/target.cgi?id=343&view=rna) |                              -                               | Telomerase           |  1187   |    -    |            A4B4C4<br>D4E2R2            |      |
 
 <br><br>
 
 ### CASP 15:
-
 
 |                            Target                            | Description                    | Length |   Ligand    |   Protein   |     Type      | PDB                                         |                           Ranking                            |
 | :----------------------------------------------------------: | :----------------------------- | :----: | :---------: | :-----------: | :-----------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
