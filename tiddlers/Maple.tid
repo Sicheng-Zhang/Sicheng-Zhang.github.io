@@ -1,5 +1,5 @@
 created: 20240117232222940
-modified: 20240726205633012
+modified: 20241001043718640
 tags: Memory
 title: Maple
 type: text/vnd.tiddlywiki
@@ -7,22 +7,21 @@ type: text/vnd.tiddlywiki
 <head>
 <style>
 .cssslide {width: auto; height: 600px; overflow:hidden; position:relative; }
-.cssslide img{ position:absolute; animation:cssslide 22s infinite; opacity:0; width: 100%; height: auto;}
+.cssslide img{ position:absolute; animation:cssslide 30s; opacity:0; width: 100%; height: auto;}
 
 @keyframes cssslide {5%{opacity:1;} 50%{opacity:0;}}
 .cssslide img:nth-child(1){animation-delay:0s;}
-.cssslide img:nth-child(2){animation-delay:1.5s;}
-.cssslide img:nth-child(3){animation-delay:3s;}
-.cssslide img:nth-child(4){animation-delay:4.5s;}
-.cssslide img:nth-child(5){animation-delay:6s;}
-.cssslide img:nth-child(6){animation-delay:7.5s;}
-.cssslide img:nth-child(7){animation-delay:9s;}
-.cssslide img:nth-child(8){animation-delay:10.5s;}
-.cssslide img:nth-child(9){animation-delay:12s;}
-.cssslide img:nth-child(10){animation-delay:13.5s;}
-.cssslide img:nth-child(11){animation-delay:15s;}
-.cssslide img:nth-child(12){animation-delay:16.5s;}
-
+.cssslide img:nth-child(2){animation-delay:2.5s;}
+.cssslide img:nth-child(3){animation-delay:5s;}
+.cssslide img:nth-child(4){animation-delay:7.5s;}
+.cssslide img:nth-child(5){animation-delay:10s;}
+.cssslide img:nth-child(6){animation-delay:12.5s;}
+.cssslide img:nth-child(7){animation-delay:15s;}
+.cssslide img:nth-child(8){animation-delay:17.5s;}
+.cssslide img:nth-child(9){animation-delay:20s;}
+.cssslide img:nth-child(10){animation-delay:22.5s;}
+.cssslide img:nth-child(11){animation-delay:25s;}
+.cssslide img:nth-child(12){animation-delay:27.5s;}
 
 </style>
 </head>
@@ -44,7 +43,7 @@ type: text/vnd.tiddlywiki
 
 	<img src="https://ucarecdn.com/ccc7f5b4-d861-4439-9ca6-4db593b94fce/-/preview/1000x750" alt="Slide 8" />
 
-	<img src="https://ucarecdn.com/d7c2d629-cb2b-4f55-b204-5828130e2397/-/preview/1000x750" alt="Slide 9" />
+	<img src="https://ucarecdn.com/8962ce2d-d558-4af9-955b-08d407cc6203/-/preview/1000x750" alt="Slide 9" />
 
 	<img src="https://ucarecdn.com/de4f1143-fc7f-4507-908d-89b57ddba8c9/-/preview/1000x750" alt="Slide 10" />
 
