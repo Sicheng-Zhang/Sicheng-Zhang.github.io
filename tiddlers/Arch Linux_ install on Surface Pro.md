@@ -126,8 +126,6 @@
 	- install KDE Plasma  
 		``` shell 
 		$ pacman -S xorg plasma plasma-wayland-session 
-		$ systemctl enable sddm.service
-		$ systemctl enable NetworkManager.service
 		```
 
 10. **Create a sudo user**
@@ -138,7 +136,7 @@
 		```
 	- give the user sudo access  
 		``` shell
-		$ EDITOR=vim vi sudo
+		$ EDITOR=vim visudo
 		```
 	- add the following line, save and exit  
 		```shell

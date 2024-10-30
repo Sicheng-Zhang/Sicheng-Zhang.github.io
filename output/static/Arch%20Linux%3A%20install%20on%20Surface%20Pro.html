@@ -181,8 +181,6 @@ color:#ffffff;"><svg class="tc-image-tag-button tc-image-button" height="22pt" v
 </code></pre>
 </li>
 <li>install KDE Plasma<pre class="hljs"><code class="shell hljs"><span class="hljs-meta">$ </span><span class="language-bash">pacman -S xorg plasma plasma-wayland-session</span> 
-<span class="hljs-meta">$ </span><span class="language-bash">systemctl <span class="hljs-built_in">enable</span> sddm.service</span>
-<span class="hljs-meta">$ </span><span class="language-bash">systemctl <span class="hljs-built_in">enable</span> NetworkManager.service</span>
 </code></pre>
 </li>
 </ul>
@@ -195,7 +193,7 @@ color:#ffffff;"><svg class="tc-image-tag-button tc-image-button" height="22pt" v
 <span class="hljs-meta">$ </span><span class="language-bash">passwd Sicheng</span>
 </code></pre>
 </li>
-<li>give the user sudo access<pre class="hljs"><code class="shell hljs"><span class="hljs-meta">$ </span><span class="language-bash">EDITOR=vim vi sudo</span>
+<li>give the user sudo access<pre class="hljs"><code class="shell hljs"><span class="hljs-meta">$ </span><span class="language-bash">EDITOR=vim visudo</span>
 </code></pre>
 </li>
 <li>add the following line, save and exit<pre class="hljs"><code class="shell hljs">Sicheng ALL=(ALL) ALL
