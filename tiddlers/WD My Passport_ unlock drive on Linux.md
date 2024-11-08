@@ -11,6 +11,7 @@
 3. Install python library `py3_sg`  using `pip3`:
 
 	```bash
+	sudo python3 -m pip install py3_sg
 	sudo pip3 install --user git+https://github.com/tvladyslav/py3_sg
 	```
 
