@@ -1,0 +1,60 @@
+created: 20221028193045008
+modified: 20241224223631112
+tags: Memo Service Nextcloud Linux
+title: Nextcloud: move service to a new domain
+type: text/vnd.tiddlywiki
+
+<br>
+
+# Get the new domain name to replace the old one (e.g.  move from `yyy.com` to `zzz.com`).
+
+# Setup DNA records on the domain provider. Point the hostname to the IP address of virtual server.  (e.g.  figure below shows the setting for Digital Ocean) <div>
+
+	<a href="https://ucarecdn.com/566a6c44-bc9d-4353-aeab-d52b55f677bd/image_2937512943.png
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://ucarecdn.com/566a6c44-bc9d-4353-aeab-d52b55f677bd/image_2937512943.png
+" alt="WESTERLIES" width="450"></a>
+
+</div>
+
+# ssh to the virtual server. Setup the new domain, disable HTTPS, remove `certs` files. <div>
+
+```bash
+sudo nextcloud.occ config:system:set trusted_domains 1 --value=zzz.com
+sudo nextcloud.disable-https
+sudo rm -rf /var/snap/nextcloud/current/certs
+```
+
+</div>
+
+# Install `certbot` and update `certs` files. <div>
+
+```bash
+sudo snap install certbot
+cd /var/snap/nextcloud/current
+sudo mkdir certs
+sudo cp -a /snap/certbot/current/. /var/snap/nextcloud/current/certs/certbot/
+```
+
+</div>
+
+# Update ''Let's Encrypt'' for the new domain. <div>
+
+```bash
+sudo snap remove certbot
+sudo ufw allow 80,443/tcp
+sudo nextcloud.enable-https lets-encrypt
+```
+
+</div>
+
+# Wait until the new domain presents a Nextcloud login page. <div>
+
+	<a href="https://ucarecdn.com/5bcda498-7312-4217-bc39-bf84c19203e4/image_892358463.png
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://ucarecdn.com/5bcda498-7312-4217-bc39-bf84c19203e4/-/preview/600x600/-/quality/smart_retina/-/format/auto/
+" alt="WESTERLIES" width="450"></a>
+
+</div>
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

@@ -1,0 +1,65 @@
+created: 20221130203236930
+modified: 20241224223006138
+tags: Memo Linux Fedora
+title: Fedora: upgrade and setup CJK fonts
+type: text/vnd.tiddlywiki
+
+<br>
+
+# Update the current Fedora release. <div>
+
+```bash
+sudo dnf upgrade --refresh
+```
+
+</div>
+
+# Update the system plugins. <div>
+
+```bash
+sudo dnf install dnf-plugin-system-upgrade
+```
+
+</div>
+
+# Download the new Fedora release (e.g. Fedora 37). <div>
+
+```bash
+sudo dnf system-upgrade download --releasever=37
+```
+
+''Tip'': If `dnf upgrade` returns the error *"The operation would result in removing the following protected packages: kernel-surface"*, skip the kernel update using:
+
+```bash
+sudo dnf upgrade --refresh --exclude="kernel-surface*"
+sudo dnf install dnf-plugin-system-upgrade
+sudo dnf system-upgrade download --releasever=37 --exclude="kernel-surface*"
+```
+
+</div>
+
+# Reboot to upgrade the system. <div>
+
+```bash
+sudo dnf system-upgrade reboot
+```
+
+</div>
+
+# Install `uming` and `ukai` fonts to display CJK characters. <div>
+
+```bash
+sudo dnf install cjkuni-ukai-fonts cjkuni-uming-fonts
+```
+
+</div>
+
+# Modify or create the config file at `/et/fonts/local.conf`. Use the content from [[local.conf|https://github.com/zma/config_files/blob/master/others/local.conf]]. <div>
+
+''Tip'': To better rendering Japanese characters, install `Google Noto` fonts.
+
+</div>
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

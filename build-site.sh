@@ -14,15 +14,19 @@ index=1
 cd ./westerlies
 for file in *%*.html
 do
-    #if [[ "$file" == "./westerlies/index.html" || "$file" == "./westerlies/archive.html" || "$file" == "./westerlies/index.html" || "$file" == "./westerlies/%2FUsers%2Fsicheng%2FWeber%2FRebello%2FMich%2FGithubPage%2Ftiddlers%2F%24__StoryList.tid.html" ]]; then
-    #if [[ "$file" == "./westerlies/index.html" || "$file" == "./westerlies/archive.html" ]]; then
-        #continue
-    #fi
+    if [[ $file =~ "StoryList" ]]; then
+        continue
+    fi
     index=$(($index+1))
-    filename=${file%%.html}
-    filename_url="${filename//\%/\%25}"
-    newfile="post-$index"
-    mv "$filename.html" "$newfile.html"
+    filename_origin=${file%%.html}
+    filename_url="${filename_origin//\%/\%25}"
+    filename_replace1="${filename_url//\%/\_}"
+    filename_replace2="${filename_replace1//\_2520/\_}"
+    filename_replace3="${filename_replace2//\_253A/\_}"
+    filename_replace4="${filename_replace3//\_2527/\_}"
+    filename_replace5="${filename_replace4//\_25/}"
+    newfile="${filename_replace5//\_\_/\_}"
+    mv "$filename_origin.html" "$newfile.html"
     sed -i "s/\"$filename_url.html\"/\"$newfile.html\"/g" *.html
 done
 cd ..

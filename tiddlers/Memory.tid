@@ -1,11 +1,18 @@
 color: #fee202
 created: 20220223170435227
 icon: $:/core/images/tag-button
-modified: 20220824183528689
+modified: 20241225001827397
 title: Memory
 type: text/vnd.tiddlywiki
 
-Back to [[index]]
+<br>
 
-Go to
+@@.compactlists
+
 <<list-links "[tag[Memory]sort[title]]">>
+
+@@
+
+<br>
+
+<p align="right">Back to [[index]] &emsp; </p>

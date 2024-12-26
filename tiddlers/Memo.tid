@@ -1,12 +1,19 @@
 color: #5265c7
 created: 20220825024706859
 icon: $:/core/images/tag-button
-modified: 20241101172914483
+modified: 20241225033054932
 tags: 
 title: Memo
 type: text/vnd.tiddlywiki
 
-Back to [[index]]
+<br>
 
-Go to
+@@.compactlists
+
 <<list-links "[tag[Memo]sort[title]]">>
+
+@@
+
+<br>
+
+<p align="right">Back to [[index]] &emsp; </p>

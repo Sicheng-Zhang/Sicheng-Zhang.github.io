@@ -1,0 +1,47 @@
+created: 20240913183418866
+modified: 20241224224218884
+tags: Memo VARNA RNA Plot
+title: PyMol: process electron density maps
+type: text/vnd.tiddlywiki
+
+<br>
+
+# Load the electron density map (as `em-map`) and the reference structure (as `struc`).
+
+# Increase the sampling rate of the map: <div>
+
+```
+as cartoon, struc
+as dots, em-map
+map_double em-map, -1
+```
+
+</div>
+	
+# Trim the map to 7 Å around the structure: <div>
+
+```
+map_trim em-map, struc, 7
+```
+
+</div>
+
+# Create dot map (`dot-map`), mesh map (`mesh-map`), or surface map (`surface-map`) from the `em-map`, contoured at 2.0 sigma, surrounding `struc`, within a radius of 3 Å. <div>
+
+```
+isodot dot-map, em-map, 2.0, struc, carve=3.0
+isomesh mesh-map, em-map, 2.0, struc, carve=3.0
+isosurface surface-map, em-map, 2.0, struc, carve=3.0
+```
+
+''Result'':
+
+	<a href="https://ucarecdn.com/d4ad23e3-9bde-480d-ad5b-811a045689e6/pymol-em-map.png
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://ucarecdn.com/d4ad23e3-9bde-480d-ad5b-811a045689e6/pymol-em-map.png
+" alt="WESTERLIES" width="350"></a>
+
+</div>
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

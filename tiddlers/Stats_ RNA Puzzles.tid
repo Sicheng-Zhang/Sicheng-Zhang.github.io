@@ -1,0 +1,55 @@
+created: 20220825025050823
+modified: 20241224230857232
+tags: Memo RNA
+title: Stats: RNA Puzzles
+type: text/vnd.tiddlywiki
+
+<br>
+
+Data from the public page of RNA-Puzzles: http://www.rnapuzzles.org/results
+
+<br>
+
+| ''Puzzle'' |''Description'' | ''Length'' | ''Pseudoknot'' | ''PDB'' | ''Reference'' |
+| 39     |B3 cloverleaf RRE                  | 90                      | N          | [[8DP3|https://www.rcsb.org/structure/8dp3]] | [[Nat Commun|https://pubmed.ncbi.nlm.nih.gov/37029118/]]                           |
+| 38     |NAD+ II riboswitch                  | 55                      | Y          | [[8HB8|https://www.rcsb.org/structure/8hb8]] | [[Nucleic Acids Res|https://pubmed.ncbi.nlm.nih.gov/36840714/]]                           |
+| 37     |NAD+ II riboswitch                  | 61                      | Y          | [[8GXC|https://www.rcsb.org/structure/8gxc]] | [[Nucleic Acids Res|https://pubmed.ncbi.nlm.nih.gov/36610789/]]                           |
+| 36     |Chimpanzee CPEB3 HDV-like ribozyme                  | 69+69                      | Y          | [[7QR3|https://www.rcsb.org/structure/7qr3]] | [[Biorxiv|https://doi.org/10.1101/2022.09.22.508989]]                           |
+| 35     |human CPEB3 HDV-like ribozyme                  | 69                      | Y          | [[7QR4|https://www.rcsb.org/structure/7qr4]] | [[Biorxiv|https://doi.org/10.1101/2022.09.22.508989]]                           |
+| 34     |methyl transferase ribozyme                  | 68                      | N          | [[7V9E|https://www.rcsb.org/structure/7v9e]] | [[Nat Chem Biol|https://pubmed.ncbi.nlm.nih.gov/35301479/]]                           |
+| 33     |xanthine riboswitch                  | 46                      | N          | [[7ELP|https://www.rcsb.org/structure/7elp]] | [[Nucleic Acids Res|https://www.ncbi.nlm.nih.gov/pubmed/?term=34125892]]                           |
+| 32     |Pepper Aptamer                  | 49                      | N          | [[7EOJ|https://www.rcsb.org/structure/7eoj]] | [[Nat Chem Biol|https://www.ncbi.nlm.nih.gov/pubmed/?term=34725509]]                           |
+| 31     |PFSE in Sars-CoV-2                  | 65                      | Y          | [[7MLX|https://www.rcsb.org/structure/7mlx]] | [[ACS Chem Biol|https://www.ncbi.nlm.nih.gov/pubmed/?term=34328734]]                           |
+| 30     |human telomerase RNA (with protein) | 88                      | N          | [[7BG9|https://www.rcsb.org/structure/7BG9]] | [[Nature|https://www.ncbi.nlm.nih.gov/pubmed/?term=33883742]]                                      |
+| 29     |NAD+ riboswitch                      | 52                      | Y          | [[6TB7|https://www.rcsb.org/structure/6tb7]] | [[RNA|https://pubmed.ncbi.nlm.nih.gov/32295864/]]                                                  |
+| 28     |T-box riboswitch - tRNA complex      | 77 + 98                 | Y          | [[6UFM|https://www.rcsb.org/structure/6ufm]] | [[Nat Struct Mol Biol|https://pubmed.ncbi.nlm.nih.gov/31792448/]]                                  |
+| 27     |T-box riboswitch - tRNA complex      | 75 + 170                | Y          | [[6POM|https://www.rcsb.org/structure/6pom]] | [[Nat Struct Mol Biol|https://www.ncbi.nlm.nih.gov/pubmed/?term=31740854]]                         |
+| 26     |T-box riboswitch - tRNA complex      | 75 + 66                 | Y          | [[6PMO|https://www.rcsb.org/structure/6pmo]] | [[Nat Struct Mol Biol|https://www.ncbi.nlm.nih.gov/pubmed/?term=31740854]]                         |
+| 25     |2'-dG-II riboswitch                  | 69                      | Y          | [[6P2H|https://www.rcsb.org/structure/6p2h]] | [[Nucleic Acids Res|https://www.ncbi.nlm.nih.gov/pubmed/?term=31598729]]                           |
+| 24     |adenovirus virus-associated RNA      | 112                     | Y          | [[6OL3|https://www.rcsb.org/structure/6ol3]] | [[Nature Communications|https://www.nature.com/articles/s41467-019-10752-6]]                       |
+| 23     |Mango-III aptamer                    | 37                      | N          | [[6E8U|https://www.rcsb.org/structure/6e8u]] | [[Nat Chem Biol|https://www.ncbi.nlm.nih.gov/pubmed/?term=30992561]]                               |
+| 22     |Hatchet Ribozyme                     | 82 + 82 (dimer]]         | Y          | [[6JQ5|https://www.rcsb.org/structure/6jq5]] | [[Proc Natl Acad Sci USA|https://www.ncbi.nlm.nih.gov/pubmed/?term=31088965]]                      |
+| 21     |Guanidine III Riboswitch             | 41                      | Y          | [[5NWQ|https://www.rcsb.org/structure/5nwq]] | [[Cell Chem Biol|https://www.ncbi.nlm.nih.gov/pubmed/?term=28988949]]                              |
+| 20     |Twister Sister ribozyme              | 18 + 50                 | N          | [[5Y85|https://www.rcsb.org/structure/5y85]] | [[Nat Commun|https://www.nature.com/articles/s41467-017-01276-y]]                                  |
+| 19     |Twister Sister robozyme              | 40 + 22                 | N          | [[5T5A|https://www.rcsb.org/structure/5t5a]] | [[Nature Chemical Biology|https://www.nature.com/nchembio/journal/v13/n5/full/nchembio.2333.html]] |
+| 18     |Zika virus                           | 71                      | Y          | [[5TPY|https://www.rcsb.org/structure/5tpy]] | [[Science|http://science.sciencemag.org/content/early/2016/11/04/science.aah3963]]                 |
+| 17     |Pistol ribozyme                      | 62                      | Y          | [[5K7C|https://www.rcsb.org/structure/5k7c]] | [[Nature Chemical Biology|http://www.nature.com/nchembio/journal/v12/n9/full/nchembio.2125.html]]  |
+| 15     |Hammerhead Ribozyme                  | 48 + 20                 | N          | [[5DI4|https://www.rcsb.org/structure/5di4]] | [[Biochemistry|http://pubs.acs.org/doi/abs/10.1021/acs.biochem.5b01139]]                           |
+| 14     |L-glutamine riboswitch               | 61                      | N          | [[5DDO|https://www.rcsb.org/structure/5ddo]] | [[Cell Rep|http://www.cell.com/cell-reports/abstract/S2211-1247]]                               |
+| 13     |ZMP Riboswitch                       | 64                      | N          | [[4XW7|https://www.rcsb.org/structure/4xw7]] | [[Chem Biol|http://www.sciencedirect.com/science/article/pii/S1074552115002331]]                   |
+| 12     |ydaO riboswitch                      | 127                     | Y          | [[4QLM|https://www.rcsb.org/structure/4qlm]] | [[Nat Chem Biol|http://www.nature.com/nchembio/journal/v10/n9/full/nchembio.1606.html]]            |
+| 11     |7SK 5'-hairpin                       | 57                      | N          | [[5LYS|https://www.rcsb.org/structure/5lys]] | [[RNA|http://www.rnajournal.org/cgi/pmidlookup?view=long&pmid=27852926]]                           |
+| 10     |T-box riboswitch - tRNA complex      | 75 + 102                | Y          | [[4LCK|https://www.rcsb.org/structure/4lck]] | [[Nature|http://www.nature.com/nature/journal/v500/n7462/full/nature12440.html]]                   |
+| 9      |5-hydroxytryptophan aptamer          | 71                      | Y          | [[5KPY|https://www.rcsb.org/structure/5kpy]] | [[Nature Chemical Biology|https://www.nature.com/articles/nchembio.2278]]                          |
+| 8      |SAM riboswitch                       | 96                      | Y          | [[4L81|https://www.rcsb.org/structure/4l81]] | [[PNAS|http://www.pnas.org/content/111/18/6624.long]]                                              |
+| 7      |Varkud satellite ribozyme            | 185                     | N          | [[4R4V|https://www.rcsb.org/structure/4r4v]] | [[Nature Chemical Biology|https://www.nature.com/articles/nchembio.1929]]                          |
+| 6      |adenosylcobalamin riboswitch         | 168                     | N          | [[4GXY|https://www.rcsb.org/structure/4gxy]] | [[Nature Structural and Molecular Biology|http://dx.doi.org/10.1038/nsmb.2405]]                    |
+| 5      |group I intron                       | 192                     | Y          | [[4P9R|https://www.rcsb.org/structure/4p9r]] | [[PNAS|http://www.pnas.org/content/111/21/7659.long]]                                              |
+| 4      |SAM-I riboswitch aptamer             | 126                     | Y          | [[3V7E|https://www.rcsb.org/structure/3v7e]] | [[RNA|http://rnajournal.cshlp.org/content/18/4/759.long]]                                          |
+| 3      |glycine riboswitch                   | 88                      | N          | [[3OWZ|https://www.rcsb.org/structure/3owz]] | [[Mol. Cell|http://www.sciencedirect.com/science/article/pii/S1097276510008920]]                   |
+| 2      |square RNA Nanosquare                | 3 X 15 + 3 X 10 | N          | [[3P59|https://www.rcsb.org/structure/3p59]] | [[PNAS|http://www.pnas.org/content/108/16/6405.short]]                                             |
+| 1      |homodimer                            | 23 + 23                 | N          | [[3MEI|https://www.rcsb.org/structure/3mei]] | [[Acta Cryst. D Biol Crystallogr|http://www.ncbi.nlm.nih.gov/pubmed/21245530]]                     |
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

@@ -1,0 +1,74 @@
+created: 20221028182802713
+modified: 20241224223953999
+tags: Memo Linux Service Nextcloud
+title: Nextcloud: setup file hosting service
+type: text/vnd.tiddlywiki
+
+<br>
+
+# Meet the prerequisites:
+#* A virtual server running Linux (e.g. Ubuntu server with IP address `xxx.xxx.xxx.xxx`)
+#* A domain name (e.g. `yyy.com`)
+	
+# ssh to the virtual server, make sure that `host` is a sudo user. <div>
+
+```bash
+ssh host@xxx.xxx.xxx.xxx
+```
+
+</div>
+
+# Setup the firewall. <div>
+
+```bash
+ufw allow OpenSSH
+ufw enable
+```
+
+</div>
+
+# Install Nextcloud and create a account (e.g. account `user1` with password `password123`). <div>
+
+```bash
+sudo snap install nextcloud
+sudo nextcloud.manual-install user1 password123
+```
+
+</div>
+
+# Setup the domain on the server. <div>
+
+```bash
+sudo nextcloud.occ config:system:set trusted_domains 1 --value=yyy.com
+sudo ufw allow 80,443/tcp
+```
+
+</div>
+	
+# Setup ''Let’s Encrypt'' for SSL/TLS certificates. <div>
+
+```bash
+sudo nextcloud.enable-https lets-encrypt
+```
+
+</div>
+	
+# Setup DNA records on the domain provider. Point the hostname to the IP address of virtual server. (e.g.  figure below shows the setting for Digital Ocean) <div>
+
+	<a href="https://ucarecdn.com/c8c49305-e075-4461-91ed-88360585faa5/image_23573983.png
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://ucarecdn.com/c8c49305-e075-4461-91ed-88360585faa5/image_23573983.png
+" alt="WESTERLIES" width="450"></a>
+
+</div>
+
+# Wait until the domain presents a Nextcloud login page. Login with `user1` and `password123`. <div>
+
+	<a href="https://ucarecdn.com/56187205-e856-4b8d-a675-392e6a9ada73/image_836734945.png
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://ucarecdn.com/56187205-e856-4b8d-a675-392e6a9ada73/-/preview/600x600/-/quality/smart_retina/-/format/auto/
+" alt="WESTERLIES" width="450"></a>
+
+</div>
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

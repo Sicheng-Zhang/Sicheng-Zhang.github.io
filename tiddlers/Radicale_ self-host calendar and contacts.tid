@@ -1,0 +1,112 @@
+created: 20240430145621382
+modified: 20241224224613933
+tags: Self-host Linux Memo
+title: Radicale: self-host calendar and contacts
+type: text/vnd.tiddlywiki
+
+<br>
+
+# Install Radicale using `pip` <div>
+
+```bash
+python3 -m pip install --upgrade radicale
+```
+
+</div>
+
+# Create configuration files for Radicale <div>
+
+```bash
+mkdir ~/.config/radicale
+touch ~/.config/radicale/config
+touch ~/.config/radicale/users
+```
+
+</div>
+
+# Install Apache `htpasswd`, then create a user and a password <div>
+
+```bash
+sudo apt-get install apache2-utils #For Debian-based
+htpasswd -c ~/.config/radicale/users user1
+```
+
+</div>
+
+# Update the `config` file with the following content <div>
+
+```txt
+[server]
+# Bind all addresses
+hosts = 0.0.0.0:5232, [::]:5232
+
+[auth]
+type = htpasswd
+htpasswd_filename = ~/.config/radicale/users
+htpasswd_encryption = md5
+
+[storage]
+filesystem_folder = ~/.var/lib/radicale/collections
+```
+
+</div>
+
+# Create Radicale service with `systemd` <div>
+
+```bash
+touch ~/.config/systemd/user/radicale.service
+```
+
+</div>
+
+# Update the file `radicale.service` with the following content <div>
+
+```bash
+[Unit]
+Description=Radicale server
+
+[Service]
+ExecStart=/usr/bin/env python3 -m radicale
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+```
+
+</div>
+
+# Start the Radicale server <div>
+
+```bash
+systemctl --user enable radicale
+systemctl --user start radicale
+systemctl --user status radicale
+```
+
+</div>
+
+# ''Optional'': Import existing calendar and contacts (for user1) <div>
+
+```bash
+curl -u 'user1:password' -X PUT http://localhost:5232/user1/calendar --data-binary @calendar.ics
+curl -u 'user1:password' -X PUT http://localhost:5232/user1/addressbook --data-binary @contact.vcf
+```
+
+</div>
+
+<br>
+
+''Note:''
+
+* When importing existing contacts (`vcf` file), make sure that every record contains `FN:`. If not, radicale returns "Bad request" error message.
+
+<br>
+
+''Next steps:''
+
+* Setup Apache configuration or nginx configuration for the Radicale service.
+* Add calendar and contacts to clients using Radicale CalDav and CardDav.
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

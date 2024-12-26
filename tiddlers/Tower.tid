@@ -1,0 +1,54 @@
+created: 20241226040039688
+modified: 20241226040309767
+tags: Memory
+title: Tower
+type: text/vnd.tiddlywiki
+
+<head>
+<style>
+.cssslide {width: auto; height: 600px; overflow:hidden; position:relative; }
+.cssslide img{ position:absolute; animation:cssslide 30s; opacity:0; width: 100%; height: auto;}
+
+@keyframes cssslide {5%{opacity:1;} 50%{opacity:0;}}
+.cssslide img:nth-child(1){animation-delay:0s;}
+.cssslide img:nth-child(2){animation-delay:2.5s;}
+.cssslide img:nth-child(3){animation-delay:5s;}
+.cssslide img:nth-child(4){animation-delay:7.5s;}
+.cssslide img:nth-child(5){animation-delay:10s;}
+.cssslide img:nth-child(6){animation-delay:12.5s;}
+.cssslide img:nth-child(7){animation-delay:15s;}
+.cssslide img:nth-child(8){animation-delay:17.5s;}
+.cssslide img:nth-child(9){animation-delay:20s;}
+.cssslide img:nth-child(10){animation-delay:22.5s;}
+.cssslide img:nth-child(11){animation-delay:25s;}
+.cssslide img:nth-child(12){animation-delay:27.5s;}
+
+</style>
+</head>
+
+<div class="cssslide">
+  <img src="https://ucarecdn.com/ceb18904-a209-4d91-b3b6-0dc711700044/-/preview/1000x750" alt="Slide 1" />
+	
+  <img src="https://ucarecdn.com/e1202aef-122f-451b-a46f-9ed44c2e9d7b/-/preview/1000x750" alt="Slide 2" />
+
+  <img src="https://ucarecdn.com/9f8828b8-b334-4a8a-b9e3-561177c9cf37/-/preview/1000x750" alt="Slide 3" />
+
+  <img src="https://ucarecdn.com/1829b434-5893-491f-8df7-767c9422662a/-/preview/1000x750" alt="Slide 4" />
+	
+	<img src="https://ucarecdn.com/a051de01-284c-4734-a891-ad8d71b56063/-/preview/1000x750" alt="Slide 5" />
+	
+	<img src="https://ucarecdn.com/a8fe1ff7-804f-46b6-9650-a48c380bfebd/-/preview/1000x750" alt="Slide 6" />
+
+	<img src="https://ucarecdn.com/f3c28684-7797-406d-8567-0de824d39e5e/-/preview/1000x750" alt="Slide 7" />
+
+	<img src="https://ucarecdn.com/c0b34b68-2ef8-4766-baeb-43621be4234e/-/preview/1000x750" alt="Slide 8" />
+
+	<img src="https://ucarecdn.com/3a7ef1ab-a3de-4dc5-96b6-049052a35590/-/preview/1000x750" alt="Slide 9" />
+
+	<img src="https://ucarecdn.com/35c14e52-4557-4182-9370-a508f03d32ad/-/preview/1000x750" alt="Slide 10" />
+
+	<img src="https://ucarecdn.com/a585ad8d-1dbd-487d-8b5a-06cd2a4a4df4/-/preview/1000x750" alt="Slide 11" />
+
+	<img src="https://ucarecdn.com/706323a2-49b8-4142-9ef6-b19ba193c2a9/-/preview/1000x750" alt="Slide 12" />
+	
+</div>

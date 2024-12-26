@@ -1,0 +1,119 @@
+created: 20241226041449273
+modified: 20241226050239303
+tags: Memo Vim
+title: Vim: basic configurations
+type: text/vnd.tiddlywiki
+
+<br>
+
+Configured in the `.vimrc` file.
+
+<br>
+
+* ''Set the current directory as the working dir'' <div>
+
+```sh
+set autochdir
+```
+
+</div>
+
+* ''Spell check'' <div>
+
+```sh
+set spell spelllang=en_us
+```
+
+</div>
+
+* ''Use 4 spaces auto-indent'' <div>
+
+```sh
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+```
+
+</div>
+
+* ''Show the ruler on status bar'' <div>
+
+```sh
+set ruler
+```
+
+</div>
+
+* ''Use Ctrl-v and Ctrl-c for copy and paste'' <div>
+
+```sh
+:inoremap <C-v> <ESC>"+pa
+:vnoremap <C-c> "+y
+```
+
+</div>
+
+* ''Set the width of line number as 7'' <div>
+
+```sh
+set numberwidth=7
+set number
+```
+
+</div>
+
+* ''Set space as the leader key'' <div>
+
+```sh
+let mapleader=" "
+nnoremap <SPACE> <Nop>
+```
+
+</div>
+
+* ''Use `<leader>p` to replace the selected text with the register without yanking it'' <div>
+
+```sh
+vnoremap <leader>p "_dP
+```
+
+</div>
+
+* ''Use `<leader>d` to delete the selected text without yanking it'' <div>
+
+```sh
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+```
+
+</div>
+
+* ''Use `<leader>w` to toggle line wrapping'' <div>
+
+```sh
+nmap <leader>w :set nowrap!<CR>
+```
+
+</div>
+
+* ''Use `<leader>r` to toggle relative line number'' <div>
+
+```sh
+nmap <leader>r :set number relativenumber!<CR>
+```
+
+</div>
+
+* ''Use `<leader>i` to toggle indent lines'' <div>
+
+```sh
+nmap <leader>i :IndentLinesToggle<CR>
+```
+
+</div>
+
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

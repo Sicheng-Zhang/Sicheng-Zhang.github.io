@@ -1,0 +1,46 @@
+created: 20220825031845517
+modified: 20241224225202486
+tags: Memo Linux Drive
+title: WD My Passport: unlock drive on Linux
+type: text/vnd.tiddlywiki
+
+<br>
+
+# Download the Passport Drive utility [[wdpassport-utils|https://raw.githubusercontent.com/evox95/wdpassport-utils/master/wdpassport-utils.py]], replace the imported library `py_sg` with `py3_sg`. <div>
+
+```bash
+import py3_sg as py_sg
+```
+
+</div>
+
+# Install packages `python-devel` and `lsscsi` using the package management.
+
+# Install python library `py3_sg`  using `pip3`: <div>
+
+```bash
+sudo python3 -m pip install py3_sg
+sudo pip3 install --user git+https://github.com/tvladyslav/py3_sg
+```
+
+</div>
+
+# Get the drive name, check the line `[xxx] Attached SCSI disk` above the WD My Passport Drive. <div>
+
+```bash
+dmesg | grep -i scsi
+```
+
+</div>
+
+# Mount the drive and enter the password. <div>
+
+```bash
+sudo ~/wdpassport-utils.py -u --device /dev/xxx
+```
+
+</div>
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

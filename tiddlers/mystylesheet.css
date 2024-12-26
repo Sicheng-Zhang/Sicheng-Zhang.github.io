@@ -1,0 +1,22 @@
+[data-tiddler-title="index"] .tc-title { display:none }
+
+li {
+    margin-top: 7px;
+}
+
+.compactlists {
+    li {margin-top: 0px;}
+}
+
+.twocolumns {
+display:block;
+column-count:2;
+-moz-column-count:2;
+-webkit-column-count:2;}
+
+.threecolumns {
+display:block;
+column-count:3;
+-moz-column-count:3;
+-webkit-column-count:3;}
+
