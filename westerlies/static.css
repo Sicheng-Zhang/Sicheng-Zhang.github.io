@@ -2867,7 +2867,7 @@ body.tc-dirty span.tc-dirty-indicator svg {
 .tc-tiddler-frame iframe.tc-edit-texteditor {
   font-family: ;
 }pre, code {
-  font-family: Courier,monospace;
+  font-family: Monaco,Consolas,monospace;
 }.tc-titlebar, .tc-site-title {
   font-size: 28px !important;
   line-height: 34px !important;

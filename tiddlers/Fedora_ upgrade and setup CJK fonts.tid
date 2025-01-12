@@ -1,5 +1,5 @@
 created: 20221130203236930
-modified: 20250110161402783
+modified: 20250112211758540
 tags: Memo Linux Fedora
 title: Fedora: upgrade and setup CJK fonts
 type: text/vnd.tiddlywiki
@@ -28,7 +28,7 @@ sudo dnf install dnf-plugin-system-upgrade
 sudo dnf system-upgrade download --releasever=37
 ```
 
-''Tip'': If `dnf upgrade` returns the error *"The operation would result in removing the following protected packages: kernel-surface"*, skip the kernel update using:
+''Tip'': If `dnf upgrade` returns the error "//The operation would result in removing the following protected packages: kernel-surface//", skip the kernel update using:
 
 ```bash
 sudo dnf upgrade --refresh --exclude="kernel-surface*"
