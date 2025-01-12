@@ -1,7 +1,7 @@
 created: 20210101213404232
-modified: 20250112212701977
+modified: 20250112214244934
 tags: 
 title: $:/themes/nico/notebook/settings/codefontfamily
 type: text/vnd.tiddlywiki
 
-Monaco,Consolas,monospace
+"Monaco","Consolas",monospace

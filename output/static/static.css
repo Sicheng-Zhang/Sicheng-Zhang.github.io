@@ -2858,6 +2858,18 @@ body.tc-dirty span.tc-dirty-indicator svg {
   border-color: #127edd;
 }.tc-tiddler-controls .tc-btn-text {
     font-size: 16px;
+}@media (min-width: 960px) {
+  .tc-tiddler-frame .tc-tiddler-controls svg {
+    opacity: 0;
+    transition: all .2s ease-in;
+  }.tc-tiddler-controls svg.tc-image-close-button,
+  .tc-tiddler-controls .py-toggle-todo-button svg,
+  .tc-tiddler-controls svg.tc-image-done-button,
+  .tc-tiddler-frame .tc-tiddler-controls:hover svg {
+    opacity: 1;
+  }.tc-tiddler-controls .py-toggle-todo-button .done svg {
+    fill: #2da562;
+  }
 }button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }/* Fonts */html, body {
@@ -2867,7 +2879,7 @@ body.tc-dirty span.tc-dirty-indicator svg {
 .tc-tiddler-frame iframe.tc-edit-texteditor {
   font-family: ;
 }pre, code {
-  font-family: Monaco,Consolas,monospace;
+  font-family: "Monaco","Consolas",monospace;
 }.tc-titlebar, .tc-site-title {
   font-size: 28px !important;
   line-height: 34px !important;
