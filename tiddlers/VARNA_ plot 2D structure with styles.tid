@@ -1,0 +1,120 @@
+created: 20240327210056014
+modified: 20250117155138146
+tags: Memo VARNA RNA Plot 2D
+title: VARNA: plot 2D structure with styles
+type: text/vnd.tiddlywiki
+
+<br>
+
+''Command line tools:'' `java` and `VARNAv3-93.jar` (downloadable at [[VARNA|https://varna.lisn.upsaclay.fr/index.php?lang=en&page=command&css=varna]])
+
+<br>
+
+---
+
+''Aim:''
+
+* Setup base pair color (`#606060`) and backbone colors (`#000000`)
+* Setup the resolution of the bitmap to `5.0`
+* Save the plot to `Plot.png`
+
+''Command:''
+
+```bash
+java -cp ./VARNAv3-93.jar fr.orsay.lri.varna.applications.VARNAcmd -sequenceDBN "GUCUUAUUACACACAGUCAAUGAGCCCGUUCCAAGUCCGUUUGGGCAC" -structureDBN "(((.(((.((.....))..))).)))...(((((......)))))..." -bp "#606060" -backbone "#000000" -o Plot.png -resolution "5.0" 
+```
+
+''Plot:''
+
+<a href="https://ucarecdn.com/b5c6a2f8-bbea-4e61-8aad-e3e7487115bc/varna-1.png
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://ucarecdn.com/b5c6a2f8-bbea-4e61-8aad-e3e7487115bc/varna-1.png
+" alt="WESTERLIES" width="230"></a>
+
+<br>
+
+---
+
+''Aim:''
+
+* Use VARNA GUI
+* Hide the outline of bases
+* Setup inner base color (`#FFFFFF`)
+* Change space between bases to `0.57`
+* Hide backbone
+* Use simple base pairing style
+
+''Command:''
+
+```bash
+java -cp ./VARNAv3-93.jar fr.orsay.lri.varna.applications.VARNAcmd -sequenceDBN "GUCUUAUUACACACAGUCAAUGAGGCCCGUUCCAAGUCCGUUUGGGCGAC" -structureDBN "(((.(((.((.....))..))).)))....(((((......)))))...." -bp "#606060" -backbone "#000000" -drawBases False -baseInner "#FFFFFF" -spaceBetweenBases "0.57" -drawBackbone False -bpStyle simple 
+```
+
+''Plot:''
+
+<a href="https://ucarecdn.com/70ec2c54-8c46-47d4-9b7d-2383d0bb4a61/varna-2.png
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://ucarecdn.com/70ec2c54-8c46-47d4-9b7d-2383d0bb4a61/varna-2.png
+" alt="WESTERLIES" width="450"></a>
+
+<br>
+
+---
+
+''Aim:''
+
+* Highlight bases 5-10 using custom outline (`#db240f`)
+
+''Command:''
+
+```bash
+java -cp ./VARNAv3-93.jar fr.orsay.lri.varna.applications.VARNAcmd -sequenceDBN "GUCUUAUUACACACAGUCAAUGAGGCCCGUUCCAAGUCCGUUUGGGCGAC" -structureDBN "(((.(((.((.....))..))).)))....(((((......)))))...." -bp "#606060" -backbone "#000000" -drawBases False -baseInner "#FFFFFF" -spaceBetweenBases "0.57" -drawBackbone False -bpStyle simple -highlightRegion "5-22:radius=10,fill=#db240f,outline=#db240f;" -resolution "5.0"
+```
+
+''Plot:''
+
+<a href="https://ucarecdn.com/ffe37c01-bca2-48e0-b3b6-b16cf416aea6/varna-3.png
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://ucarecdn.com/ffe37c01-bca2-48e0-b3b6-b16cf416aea6/varna-3.png
+" alt="WESTERLIES" width="450"></a>
+
+<br>
+
+---
+
+''Aim:''
+
+* Use a custom base style for bases 35-42 (`#00ebff`)
+
+''Command:''
+
+```bash
+java -cp ./VARNAv3-93.jar fr.orsay.lri.varna.applications.VARNAcmd -sequenceDBN "GUCUUAUUACACACAGUCAAUGAGGCCCGUUCCAAGUCCGUUUGGGCGAC" -structureDBN "(((.(((.((.....))..))).)))....(((((......)))))...." -bp "#606060" -backbone "#000000" -drawBases False -baseInner "#FFFFFF" -spaceBetweenBases "0.57" -drawBackbone False -bpStyle simple  -basesStyle1 "outline=#000000,label=#000000,fill=#00ebff" -applyBasesStyle1on "35-42"
+```
+
+''Plot:''
+
+<a href="https://ucarecdn.com/b281a74d-a6a1-4a65-99bf-50beca5b47d1/varna-4.png
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://ucarecdn.com/b281a74d-a6a1-4a65-99bf-50beca5b47d1/varna-4.png
+" alt="WESTERLIES" width="450"></a>
+
+<br>
+
+---
+
+''Aim:''
+
+* Use custom color map rendering to the bases (`#f5f5f5` to `#f50000`)
+
+''Command:''
+
+```bash
+java -cp ./VARNAv3-93.jar fr.orsay.lri.varna.applications.VARNAcmd -sequenceDBN "GUCUUAUUACACACAGUCAAUGAGGCCCGUUCCAAGUCCGUUUGGGCGAC" -structureDBN "(((.(((.((.....))..))).)))....(((((......)))))...." -bp "#606060" -backbone "#000000" -drawBases False -baseInner "#FFFFFF" -spaceBetweenBases "0.57" -drawBackbone False -bpStyle simple -colorMapStyle "0:#f5f5f5;1:#f50000" -colorMap "0.7;0.8;0.2;1.0;1.0;1.0;0.0;1.0;1.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;1.0;1.0;1.0;1.0;1.0;0.5;0.5;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.5;1.0;0.5;0.0;0.0;0.0;1.0;0.0;0.0;1.0;0.0;0.5;1.0;1.0;0.5;1.0;1.0;1.0;" 
+```
+
+''Plot:''
+
+<a href="https://ucarecdn.com/ebb468bd-52ea-471d-9938-cd1a76c2cbe0/varna-5.png
+" target="_blank" rel="noopener noreferrer" class="center"><img src="https://ucarecdn.com/ebb468bd-52ea-471d-9938-cd1a76c2cbe0/varna-5.png
+" alt="WESTERLIES" width="450"></a>
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

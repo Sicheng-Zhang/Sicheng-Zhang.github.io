@@ -1,0 +1,62 @@
+created: 20221231221357495
+modified: 20250117155029152
+tags: Memo CLI Linux
+title: Command line tricks: convert file formats
+type: text/vnd.tiddlywiki
+
+<br>
+
+''Command line tools:'' `convert`, `pandoc`, `mutool`
+
+<br>
+
+`PNG` to `EPS`
+
+```shell
+convert input.png eps2:output.eps
+```
+
+<br>
+
+`PNG` to `PDF`
+
+```bash
+mutool convert -o output.pdf input.png
+mutool convert -o output.pdf *.png # multiple images
+```
+
+<br>
+
+`PDF` to `TXT`
+
+```bash
+mutool draw -F txt input.pdf -o output.txt
+```
+
+<br>
+
+`PDF` to `PNG` (pages 1-10, rotate 90 degree, resolution 200 dpi)
+
+```bash
+mutool convert -O rotate=90,resolution=200 -o output%d.png input.pdf 1-10
+```
+
+<br>
+
+`LaTeX` to `Docx` with bibliography (in [[IEEE style|https://github.com/citation-style-language/styles/blob/master/ieee.csl]])
+
+```bash
+pandoc -s input.tex --bibliography input.bib --citeproc --csl ieee.csl -o output.docx
+```
+
+<br>
+
+`LaTeX` bibliography to `HTML` (in [[IEEE style|https://github.com/citation-style-language/styles/blob/master/ieee.csl]])
+
+```bash
+pandoc -s input.bib --citeproc --csl ieee.csl -o output.html
+```
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.2.7" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>R Markdown: create conference poster: Westerlies — a memex</title>
+</head>
+<body class="tc-body">
+
+
+<section class="tc-story-river tc-static-story-river">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Memo tc-tagged-R tc-tagged-Markdown" data-tags="Memo R Markdown" data-tiddler-title="R Markdown: create conference poster" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">R Markdown: create conference poster</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class="tc-reveal"></div><div class=" tc-reveal"></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="Markdown"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#283c46;
+color:#283c46;">Markdown</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item" data-tag-title="Memo"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:#5265c7;
+fill:#ffffff;
+color:#ffffff;"><svg class="tc-image-tag-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M18.164 47.66l.004 4.105c.003 3.823 2.19 9.097 4.885 11.792l61.85 61.85c2.697 2.697 7.068 2.69 9.769-.01L125.767 94.3a6.903 6.903 0 00.01-9.77L63.928 22.683c-2.697-2.697-7.976-4.88-11.796-4.881l-27.076-.007a6.902 6.902 0 00-6.91 6.91l.008 9.96.287.033c3.73.411 8.489-.044 13.365-1.153a9.702 9.702 0 0111.14-3.662l.291-.13.128.285a9.7 9.7 0 013.3 2.17c3.796 3.796 3.801 9.945.012 13.734-3.618 3.618-9.386 3.777-13.204.482-5.365 1.122-10.674 1.596-15.309 1.237z"></path><path d="M47.633 39.532l.023.051c-9.689 4.356-21.584 6.799-30.396 5.828C5.273 44.089-1.028 36.43 2.443 24.078 5.562 12.976 14.3 4.361 24.047 1.548c10.68-3.083 19.749 1.968 19.749 13.225h-8.623c0-4.859-3.078-6.573-8.735-4.94-6.91 1.995-13.392 8.383-15.694 16.577-1.915 6.818.417 9.653 7.46 10.43 7.126.785 17.531-1.352 25.917-5.121l.027.06.036-.017c1.76-.758 6.266 6.549 3.524 7.74a2.8 2.8 0 01-.075.03z"></path></g></svg>Memo</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item" data-tag-title="R"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#283c46;
+color:#283c46;">R</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span></div></div><div class="tc-tiddler-body tc-reveal"><br><p><strong>Command line tools:</strong> <a class="tc-tiddlylink-external" href="https://www.r-project.org" rel="noopener noreferrer" target="_blank">R</a> (version 4.4.2), <code>pandoc</code></p><br><ol><li><strong>Install packages within R</strong> <div><pre class="hljs"><code class="r hljs">R<span class="hljs-operator">&gt;</span> install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;rmarkdown&quot;</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># Rmarkdown support</span>
+R<span class="hljs-operator">&gt;</span> install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;readr&quot;</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># read CSV data</span>
+R<span class="hljs-operator">&gt;</span> install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;posterdown&quot;</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># generate poster</span></code></pre></div></li><li><strong>Prepare the data</strong><ul><li>Data for tables should be provided in <code>.csv</code> file</li><li>Bibliography data should be provided in <code>.bib</code> file</li><li>Images</li></ul></li><li><strong>Write poster contents in an R Markdown file</strong><ul><li><strong>The YAML section</strong>:<ul><li>title and author <div><pre class="hljs"><code class="yaml hljs"><span class="hljs-attr">author:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">SZ</span>
+    <span class="hljs-attr">affil:</span> <span class="hljs-number">1</span><span class="hljs-string">,</span> <span class="hljs-number">2</span>
+<span class="hljs-attr">affiliation:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">num:</span> <span class="hljs-number">1</span>
+    <span class="hljs-attr">address:</span> <span class="hljs-string">Department</span> <span class="hljs-string">of</span> <span class="hljs-string">XXX</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">num:</span> <span class="hljs-number">2</span>
+    <span class="hljs-attr">address:</span> <span class="hljs-string">Department</span> <span class="hljs-string">of</span> <span class="hljs-string">YYY</span></code></pre></div></li><li>poster sizes <div><pre class="hljs"><code class="yaml hljs"><span class="hljs-attr">poster_width:</span> <span class="hljs-string">&quot;24in&quot;</span>
+<span class="hljs-attr">poster_height:</span> <span class="hljs-string">&quot;18in&quot;</span></code></pre></div></li><li>logo <div><pre class="hljs"><code class="yaml hljs"><span class="hljs-attr">logoleft_name:</span> <span class="hljs-string">&quot;./logo.png&quot;</span>
+<span class="hljs-attr">logoright_name:</span> <span class="hljs-string">&quot;./logo.png&quot;</span></code></pre></div></li><li>bibliography: <div><pre class="hljs"><code class="yaml hljs"><span class="hljs-attr">bibliography:</span> <span class="hljs-string">&quot;reference.bib&quot;</span></code></pre></div></li><li>poster style: <div><pre class="hljs"><code class="yaml hljs"><span class="hljs-attr">output:</span> <span class="hljs-string">posterdown::posterdown_html</span></code></pre></div></li></ul></li><li><strong>The markdown section</strong>: write using standard markdown syntax<ul><li>hide codes in the poster <div><pre class="hljs"><code class="sql hljs">```{r setup, include<span class="hljs-operator">=</span><span class="hljs-literal">FALSE</span>}
+knitr::opts_chunk$<span class="hljs-keyword">set</span>(echo <span class="hljs-operator">=</span> <span class="hljs-literal">FALSE</span>)
+```
+</code></pre></div></li><li>table generation <div><pre class="hljs"><code class="sql hljs">```{r Table1, out.width<span class="hljs-operator">=</span><span class="hljs-string">&#x27;100%&#x27;</span>, warning <span class="hljs-operator">=</span> <span class="hljs-literal">FALSE</span>, message <span class="hljs-operator">=</span> <span class="hljs-literal">FALSE</span>}
+library(&quot;readr&quot;)
+models <span class="hljs-operator">=</span> read_csv(&quot;./models.csv&quot;)
+knitr::kable(models, align <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;c&#x27;</span>,&quot;html&quot;)
+```
+</code></pre></div></li><li>fons size for the references <div><pre class="hljs"><code class="markdown hljs"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;3.5&quot;</span>&gt;</span></span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;refs&quot;</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span> <span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span></span></code></pre></div></li></ul></li></ul></li><li><strong>Compile the file within R</strong><ul><li>create the poster in HTML format <div><pre class="hljs"><code class="r hljs">R<span class="hljs-operator">&gt;</span> rmarkdown<span class="hljs-operator">::</span>render<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;poster.Rmd&quot;</span><span class="hljs-punctuation">)</span></code></pre></div></li><li>create the poster in PDF format (<strong>Requires Chrome browser</strong>) <div><pre class="hljs"><code class="r hljs">R<span class="hljs-operator">&gt;</span> pagedown<span class="hljs-operator">::</span>chrome_print<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;poster.Rmd&quot;</span><span class="hljs-punctuation">)</span></code></pre></div></li></ul></li></ol><ul><li><strong>More advanced settings</strong>: modify the template HTML file<ul><li>MacOS: <code>/Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/library/posterdown/rmarkdown/templates/posterdown_html/resources/template.html</code></li><li>Linux (Fedora): <code>~/R/x86_64-redhat-linux-gnu-library/4.4/posterdown/rmarkdown/templates/posterdown_html/resources/template.html</code></li></ul></li></ul><br><hr><p>Example file for <code>poster.Rmd</code>:</p><p><style>
+.myfile {width:100%; height:10em !important; background-color: #f5f5f5;}
+.my<a class="tc-tiddlylink-external" href="file:focus" rel="noopener noreferrer" target="_blank">file:focus</a> { height:5em !important; }
+</style></p><textarea class="myfile" style="height:600px;">---
+title: "Conference Poster"
+poster_width: "24in"
+poster_height: "18in"
+author:
+  - name: SZ
+    affil: 1, 2
+affiliation:
+  - num: 1
+    address: Department of XXX
+  - num: 2
+    address: Department of YYY
+
+column_numbers: 3
+
+logoleft_name: "./logo.png"
+logoright_name: "./logo.png"
+
+primary_colour:	"#F0A81B"
+secondary_colour: "#000000"
+accent_colour: "steelblue"
+
+titlebox_height: "10%"
+titlebox_borderwidth: "0.6cm"
+titlebox_bordercol: "#F0A81B"
+title_textcol: "#000000"
+title_textsize: "50pt"
+author_textsize: "29pt"
+
+body_textsize: "27px"
+sectitle_textsize: "25pt"
+sectitle2_textsize: "17pt"
+sectitle_bordercol: "#F0C147"
+sectitle_bgcol: "#F0C147"
+
+column_margins: "0.3in"
+
+sectitle_textcol: "#000000"
+affiliation_textcol: "#000000"
+affiliation_textsize: "29pt"
+output: posterdown::posterdown_html
+bibliography: "reference.bib"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# H1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum [@R-knitr;@R-pagedown;@R-posterdown].
+
+```{r Table1, out.width='100%', warning = FALSE, message = FALSE}
+library("readr")
+models = read_csv("./models.csv")
+knitr::kable(models, align = 'c',"html")
+```
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+# H2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+
+&lt;p style="text-align:center;"&gt;&lt;img src="./plot.svg" style="zoom: 100%;"/&gt;&lt;/p&gt;
+
+**Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+&lt;p style="text-align:center;"&gt;&lt;img src="./plot.svg" style="zoom: 100%;"/&gt;&lt;/p&gt;
+
++ XXXXXXXXXXXXXX
++ YYYYYYYYYYYYYY
++ ZZZZZZZZZZZZZZ
+
+**Lorem ipsum**:
+
++ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
++ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+# H3
+
+**Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+# Acknowledgments
+
+The work was supported by ZZZ.
+
+# References
+&lt;font size="3.5"&gt; &lt;div id="refs"&gt;&lt;/div&gt; &lt;/font&gt;
+</textarea><br><p>Result after compilation:</p><p><div style="text-align: center;">
+<a href="https://ucarecdn.com/9817a4b0-fc3f-40e8-81ba-948cf8bf182b/poster.png" rel="noopener noreferrer" target="_blank"><img alt="WESTERLIES" src="https://ucarecdn.com/9817a4b0-fc3f-40e8-81ba-948cf8bf182b/-/preview/900x900/-/quality/smart_retina/-/format/auto/" width="450"></a>
+</div></p><br><p><p align="right">Back to <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Memo.html">Memo</a>   </p></p></div>
+</div></p>
+</section>
+</body>
+</html>
+

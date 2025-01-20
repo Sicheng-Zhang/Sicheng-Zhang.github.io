@@ -1,0 +1,156 @@
+created: 20250117154920786
+modified: 20250117214615799
+tags: Memo R Markdown
+title: R Markdown: create conference poster
+type: text/vnd.tiddlywiki
+
+<br>
+
+''Command line tools:'' [[R|https://www.r-project.org]] (version 4.4.2), `pandoc`
+
+<br>
+
+# ''Install packages within R'' <div>
+
+```r
+R> install.packages("rmarkdown") # Rmarkdown support
+R> install.packages("readr") # read CSV data
+R> install.packages("posterdown") # generate poster
+```
+
+</div>
+
+# ''Prepare the data''
+#* Data for tables should be provided in `.csv` file
+#* Bibliography data should be provided in `.bib` file
+#* Images
+
+# ''Write poster contents in an R Markdown file''
+#* ''The YAML section'':
+
+#** title and author <div>
+
+```yaml
+author:
+  - name: SZ
+    affil: 1, 2
+affiliation:
+  - num: 1
+    address: Department of XXX
+  - num: 2
+    address: Department of YYY
+```
+
+</div>
+
+#** poster sizes <div>
+
+```yaml
+poster_width: "24in"
+poster_height: "18in"
+```
+
+</div>
+
+#** logo <div>
+
+```yaml
+logoleft_name: "./logo.png"
+logoright_name: "./logo.png"
+```
+
+</div>
+
+#** bibliography: <div>
+
+```yaml
+bibliography: "reference.bib"
+```
+
+</div>
+
+#** poster style: <div>
+
+```yaml
+output: posterdown::posterdown_html
+```
+
+</div>
+
+#* ''The markdown section'': write using standard markdown syntax
+
+#** hide codes in the poster <div>
+
+<$codeblock code="""```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+""" language="sql" />
+
+</div>
+
+#** table generation <div>
+
+<$codeblock code="""```{r Table1, out.width='100%', warning = FALSE, message = FALSE}
+library("readr")
+models = read_csv("./models.csv")
+knitr::kable(models, align = 'c',"html")
+```
+""" language="sql" />
+
+</div>
+
+#** fons size for the references <div>
+
+```markdown
+<font size="3.5"> <div id="refs"></div> </font>
+```
+
+</div>
+
+
+# ''Compile the file within R''
+#* create the poster in HTML format <div>
+
+```r
+R> rmarkdown::render("poster.Rmd")
+```
+
+</div>
+
+#* create the poster in PDF format (''Requires Chrome browser'') <div>
+
+```r
+R> pagedown::chrome_print("poster.Rmd")
+```
+
+</div>
+
+* ''More advanced settings'': modify the template HTML file
+** MacOS: `/Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/library/posterdown/rmarkdown/templates/posterdown_html/resources/template.html`
+** Linux (Fedora): `~/R/x86_64-redhat-linux-gnu-library/4.4/posterdown/rmarkdown/templates/posterdown_html/resources/template.html`
+
+
+<br>
+
+---
+
+Example file for `poster.Rmd`:
+
+<style>
+.myfile {width:100%; height:10em !important; background-color: #f5f5f5;}
+.myfile:focus { height:5em !important; }
+</style>
+
+<$edit-text class="myfile" tiddler="poster"/>
+
+<br>
+
+Result after compilation:
+
+<div style="text-align: center;">
+<a href="https://ucarecdn.com/9817a4b0-fc3f-40e8-81ba-948cf8bf182b/poster.png" target="_blank" rel="noopener noreferrer"><img src="https://ucarecdn.com/9817a4b0-fc3f-40e8-81ba-948cf8bf182b/-/preview/900x900/-/quality/smart_retina/-/format/auto/" alt="WESTERLIES" width="450"></a>
+</div>
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>
