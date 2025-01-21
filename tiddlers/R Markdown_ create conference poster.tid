@@ -1,5 +1,5 @@
 created: 20250117154920786
-modified: 20250117214615799
+modified: 20250121161531000
 tags: Memo R Markdown
 title: R Markdown: create conference poster
 type: text/vnd.tiddlywiki
@@ -99,9 +99,9 @@ knitr::kable(models, align = 'c',"html")
 
 </div>
 
-#** fons size for the references <div>
+#** font size for the references <div>
 
-```markdown
+```HTML
 <font size="3.5"> <div id="refs"></div> </font>
 ```
 
