@@ -8,7 +8,7 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
    viewBox="0 0 2148 1896"
    id="svg3059"
    sodipodi:docname="Cleveland.svg"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -12314,22 +12314,27 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="m 128.57036,981.44818 a 9.4520769,9.4520769 0 0 1 -6.47116,11.252 9.4520769,9.4520769 0 0 1 -11.60305,-5.81828 9.4520769,9.4520769 0 0 1 5.14643,-11.91627 9.4520769,9.4520769 0 0 1 12.19063,4.4578" />
-    <text
-       xml:space="preserve"
-       style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
-       x="136.13815"
-       y="993.01965"
-       id="text5310-8-2-9-0"><tspan
-         sodipodi:role="line"
-         id="tspan5310-7-2-0-2"
+    <a
+       href="https://en.wikipedia.org/wiki/Edgewater,_Cleveland"
+       target="_blank"
+       id="a1">
+      <text
+         xml:space="preserve"
+         style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
          x="136.13815"
          y="993.01965"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862">Edgewater Park</tspan><tspan
-         sodipodi:role="line"
-         x="136.13815"
-         y="1027.9482"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3061" /></text>
+         id="text5310-8-2-9-0"><tspan
+           sodipodi:role="line"
+           id="tspan5310-7-2-0-2"
+           x="136.13815"
+           y="993.01965"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862">Edgewater Park</tspan><tspan
+           sodipodi:role="line"
+           x="136.13815"
+           y="1027.9482"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3061" /></text>
+    </a>
   </g>
   <g
      id="g5310-8-2-4-3-6"
@@ -12348,22 +12353,27 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="m 128.57036,981.44818 a 9.4520769,9.4520769 0 0 1 -6.47116,11.252 9.4520769,9.4520769 0 0 1 -11.60305,-5.81828 9.4520769,9.4520769 0 0 1 5.14643,-11.91627 9.4520769,9.4520769 0 0 1 12.19063,4.4578" />
-    <text
-       xml:space="preserve"
-       style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
-       x="136.13815"
-       y="993.01965"
-       id="text5310-8-2-9-0-5"><tspan
-         sodipodi:role="line"
+    <a
+       href="https://en.wikipedia.org/wiki/Public_Square,_Cleveland"
+       target="_blank"
+       id="a2">
+      <text
+         xml:space="preserve"
+         style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
          x="136.13815"
          y="993.01965"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3061-1">Cleveland Public Square</tspan><tspan
-         sodipodi:role="line"
-         x="136.13815"
-         y="1027.9482"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3062" /></text>
+         id="text5310-8-2-9-0-5"><tspan
+           sodipodi:role="line"
+           x="136.13815"
+           y="993.01965"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3061-1">Cleveland Public Square</tspan><tspan
+           sodipodi:role="line"
+           x="136.13815"
+           y="1027.9482"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3062" /></text>
+    </a>
   </g>
   <g
      id="g5310-8-2-4-3-6-2"
@@ -12382,26 +12392,31 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="m 128.57036,981.44818 a 9.4520769,9.4520769 0 0 1 -6.47116,11.252 9.4520769,9.4520769 0 0 1 -11.60305,-5.81828 9.4520769,9.4520769 0 0 1 5.14643,-11.91627 9.4520769,9.4520769 0 0 1 12.19063,4.4578" />
-    <text
-       xml:space="preserve"
-       style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
-       x="-131.21022"
-       y="993.01965"
-       id="text5310-8-2-9-0-5-4"><tspan
-         sodipodi:role="line"
+    <a
+       href="https://en.wikipedia.org/wiki/Progressive_Field"
+       target="_blank"
+       id="a3">
+      <text
+         xml:space="preserve"
+         style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
          x="-131.21022"
          y="993.01965"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3061-1-1">Progressive Field</tspan><tspan
-         sodipodi:role="line"
-         x="-131.21022"
-         y="1027.9482"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3062-3" /></text>
+         id="text5310-8-2-9-0-5-4"><tspan
+           sodipodi:role="line"
+           x="-131.21022"
+           y="993.01965"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3061-1-1">Progressive Field</tspan><tspan
+           sodipodi:role="line"
+           x="-131.21022"
+           y="1027.9482"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3062-3" /></text>
+    </a>
   </g>
   <g
      id="g5310-8-2-4-3-6-3"
-     transform="matrix(1.5131754,0,0,1.5131754,1199.4983,-1099.334)"
+     transform="matrix(1.5131754,0,0,1.5131754,1185.2259,-1099.334)"
      style="stroke-width:0.660862">
     <path
        style="vector-effect:non-scaling-stroke;fill:#ff0000;stroke:none;stroke-width:0.396518;stroke-linejoin:bevel;stroke-miterlimit:3.4;stroke-dasharray:none"
@@ -12416,17 +12431,22 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="m 128.57036,981.44818 a 9.4520769,9.4520769 0 0 1 -6.47116,11.252 9.4520769,9.4520769 0 0 1 -11.60305,-5.81828 9.4520769,9.4520769 0 0 1 5.14643,-11.91627 9.4520769,9.4520769 0 0 1 12.19063,4.4578" />
-    <text
-       xml:space="preserve"
-       style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
-       x="-274.54761"
-       y="993.01965"
-       id="text5310-8-2-9-0-5-5"><tspan
-         sodipodi:role="line"
-         x="-274.54761"
+    <a
+       href="https://en.wikipedia.org/wiki/North_Coast_Harbor"
+       target="_blank"
+       id="a4">
+      <text
+         xml:space="preserve"
+         style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
+         x="-161.77812"
          y="993.01965"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3062-14">Voinovich Bicentennial Park</tspan></text>
+         id="text5310-8-2-9-0-5-5"><tspan
+           sodipodi:role="line"
+           x="-161.77812"
+           y="993.01965"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3062-14">North Coast Harbor</tspan></text>
+    </a>
   </g>
   <g
      id="g5310-8-2-4-3-6-6"
@@ -12445,17 +12465,22 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="m 128.57036,981.44818 a 9.4520769,9.4520769 0 0 1 -6.47116,11.252 9.4520769,9.4520769 0 0 1 -11.60305,-5.81828 9.4520769,9.4520769 0 0 1 5.14643,-11.91627 9.4520769,9.4520769 0 0 1 12.19063,4.4578" />
-    <text
-       xml:space="preserve"
-       style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
-       x="-261.66336"
-       y="993.01965"
-       id="text5310-8-2-9-0-5-8"><tspan
-         sodipodi:role="line"
+    <a
+       href="https://en.wikipedia.org/wiki/Huntington_Bank_Field"
+       target="_blank"
+       id="a5">
+      <text
+         xml:space="preserve"
+         style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
          x="-261.66336"
          y="993.01965"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3062-1">Cleveland Browns Stadium</tspan></text>
+         id="text5310-8-2-9-0-5-8"><tspan
+           sodipodi:role="line"
+           x="-261.66336"
+           y="993.01965"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3062-1">Cleveland Browns Stadium</tspan></text>
+    </a>
   </g>
   <g
      id="g5310-8-2-4-3-6-6-1"
@@ -12474,22 +12499,27 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="m 128.57036,981.44818 a 9.4520769,9.4520769 0 0 1 -6.47116,11.252 9.4520769,9.4520769 0 0 1 -11.60305,-5.81828 9.4520769,9.4520769 0 0 1 5.14643,-11.91627 9.4520769,9.4520769 0 0 1 12.19063,4.4578" />
-    <text
-       xml:space="preserve"
-       style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
-       x="-211.73686"
-       y="993.01965"
-       id="text5310-8-2-9-0-5-8-2"><tspan
-         sodipodi:role="line"
+    <a
+       href="https://en.wikipedia.org/wiki/Fountain_of_Eternal_Life"
+       target="_blank"
+       id="a6">
+      <text
+         xml:space="preserve"
+         style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
          x="-211.73686"
          y="993.01965"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3062-1-1">Fountain of Eternal Life</tspan><tspan
-         sodipodi:role="line"
-         x="-211.73686"
-         y="1027.9482"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan2" /></text>
+         id="text5310-8-2-9-0-5-8-2"><tspan
+           sodipodi:role="line"
+           x="-211.73686"
+           y="993.01965"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3062-1-1">Fountain of Eternal Life</tspan><tspan
+           sodipodi:role="line"
+           x="-211.73686"
+           y="1027.9482"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan2" /></text>
+    </a>
   </g>
   <g
      id="g5310-8-2-4-3-6-6-3"
@@ -12508,17 +12538,22 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="m 128.57036,981.44818 a 9.4520769,9.4520769 0 0 1 -6.47116,11.252 9.4520769,9.4520769 0 0 1 -11.60305,-5.81828 9.4520769,9.4520769 0 0 1 5.14643,-11.91627 9.4520769,9.4520769 0 0 1 12.19063,4.4578" />
-    <text
-       xml:space="preserve"
-       style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
-       x="-229.45271"
-       y="991.40912"
-       id="text5310-8-2-9-0-5-8-0"><tspan
-         sodipodi:role="line"
+    <a
+       href="https://en.wikipedia.org/wiki/Rock_and_Roll_Hall_of_Fame"
+       target="_blank"
+       id="a7">
+      <text
+         xml:space="preserve"
+         style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
          x="-229.45271"
          y="991.40912"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3062-1-2">Rock &amp; Roll Hall of Fame</tspan></text>
+         id="text5310-8-2-9-0-5-8-0"><tspan
+           sodipodi:role="line"
+           x="-229.45271"
+           y="991.40912"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3062-1-2">Rock &amp; Roll Hall of Fame</tspan></text>
+    </a>
   </g>
   <g
      id="g5310-8-2-4-3-6-6-3-6"
@@ -12537,22 +12572,27 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="m 128.57036,981.44818 a 9.4520769,9.4520769 0 0 1 -6.47116,11.252 9.4520769,9.4520769 0 0 1 -11.60305,-5.81828 9.4520769,9.4520769 0 0 1 5.14643,-11.91627 9.4520769,9.4520769 0 0 1 12.19063,4.4578" />
-    <text
-       xml:space="preserve"
-       style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
-       x="26.621933"
-       y="970.47223"
-       id="text5310-8-2-9-0-5-8-0-8"><tspan
-         sodipodi:role="line"
+    <a
+       href="https://en.wikipedia.org/wiki/Playhouse_Square"
+       target="_blank"
+       id="a8">
+      <text
+         xml:space="preserve"
+         style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
          x="26.621933"
          y="970.47223"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3062-1-2-4">Playhouse Square</tspan><tspan
-         sodipodi:role="line"
-         x="26.621933"
-         y="1005.4009"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan1" /></text>
+         id="text5310-8-2-9-0-5-8-0-8"><tspan
+           sodipodi:role="line"
+           x="26.621933"
+           y="970.47223"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3062-1-2-4">Playhouse Square</tspan><tspan
+           sodipodi:role="line"
+           x="26.621933"
+           y="1005.4009"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan1" /></text>
+    </a>
   </g>
   <g
      id="g5310-8-2-4-3-6-4"
@@ -12571,22 +12611,27 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="m 128.57036,981.44818 a 9.4520769,9.4520769 0 0 1 -6.47116,11.252 9.4520769,9.4520769 0 0 1 -11.60305,-5.81828 9.4520769,9.4520769 0 0 1 5.14643,-11.91627 9.4520769,9.4520769 0 0 1 12.19063,4.4578" />
-    <text
-       xml:space="preserve"
-       style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
-       x="-136.03944"
-       y="993.01965"
-       id="text5310-8-2-9-0-5-0"><tspan
-         sodipodi:role="line"
+    <a
+       href="https://en.wikipedia.org/wiki/Tower_City_Center"
+       target="_blank"
+       id="a9">
+      <text
+         xml:space="preserve"
+         style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
          x="-136.03944"
          y="993.01965"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3061-1-3">Tower City Center</tspan><tspan
-         sodipodi:role="line"
-         x="-136.03944"
-         y="1027.9482"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3062-2" /></text>
+         id="text5310-8-2-9-0-5-0"><tspan
+           sodipodi:role="line"
+           x="-136.03944"
+           y="993.01965"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3061-1-3">Tower City Center</tspan><tspan
+           sodipodi:role="line"
+           x="-136.03944"
+           y="1027.9482"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3062-2" /></text>
+    </a>
   </g>
   <g
      id="g5310-8-2-4-3-7"
@@ -12605,21 +12650,26 @@ Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="m 128.57036,981.44818 a 9.4520769,9.4520769 0 0 1 -6.47116,11.252 9.4520769,9.4520769 0 0 1 -11.60305,-5.81828 9.4520769,9.4520769 0 0 1 5.14643,-11.91627 9.4520769,9.4520769 0 0 1 12.19063,4.4578" />
-    <text
-       xml:space="preserve"
-       style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
-       x="136.13815"
-       y="993.01965"
-       id="text5310-8-2-9-0-3"><tspan
-         sodipodi:role="line"
-         id="tspan5310-7-2-0-2-9"
+    <a
+       href="https://commons.wikimedia.org/wiki/Category:Cleveland_Script_Sign_(Edgewater_Park)"
+       target="_blank"
+       id="a10">
+      <text
+         xml:space="preserve"
+         style="font-size:27.9429px;line-height:1.25;font-family:arial;-inkscape-font-specification:'arial, Normal';fill:#ff0000;stroke-width:0.660862"
          x="136.13815"
          y="993.01965"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862">Cleveland Script Sign</tspan><tspan
-         sodipodi:role="line"
-         x="136.13815"
-         y="1027.9482"
-         style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
-         id="tspan3061-9" /></text>
+         id="text5310-8-2-9-0-3"><tspan
+           sodipodi:role="line"
+           id="tspan5310-7-2-0-2-9"
+           x="136.13815"
+           y="993.01965"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862">Cleveland Script Sign</tspan><tspan
+           sodipodi:role="line"
+           x="136.13815"
+           y="1027.9482"
+           style="font-weight:bold;fill:#ff0000;stroke-width:0.660862"
+           id="tspan3061-9" /></text>
+    </a>
   </g>
 </svg>

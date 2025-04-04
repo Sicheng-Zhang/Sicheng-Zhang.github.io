@@ -1,0 +1,82 @@
+created: 20250404185040045
+modified: 20250404190932368
+tags: Memo
+title: ChimeraX: create image using commands
+type: text/vnd.tiddlywiki
+
+<br>
+
+> ''ChimeraX version'': 1.9
+> example: PDB 3OWI
+
+<br>
+
+# Load the structure, setup the style, and split the chains. <div>
+
+```sh
+open 3owi
+set bgColor white
+lighting simple
+graphics sil true width 1 color black
+nucleotides atoms
+~hbonds
+split #1
+log chains #1
+```
+
+</div>
+
+# Save the domain residues and color the domains (see available colors t [[build-in colors|https://www.cgl.ucsf.edu/chimerax/docs/user/commands/colornames.html]]). <div>
+
+```bash
+name P1 #1:1-7, 84-88
+name P2 #1:12-28
+name list
+color #1 gray
+color P1 gold
+color P2 blue
+color ligand cyan
+color ions tomato
+```
+
+</div>
+
+# Setup the transparency. <div>
+
+```sh
+surf ligand
+surf style solid
+trans #1 70 All
+sel zone ligand 7 nucleic
+graphics sel col gold width 2
+color sel lime
+trans sel 0 All
+trans ligand 0 All
+trans ions 0 All
+```
+
+</div>
+
+# Create the camera view and save the results. <div>
+
+```sh
+turn x 60
+view sel; zoom 1.7
+view name pocket
+view; zoom 1.4
+~sel
+save test.png transparentBackground true pixelSize 0.03 supersample 3
+```
+</div>
+
+The result of `test.png`:
+
+<div style="text-align: center;">
+<a href="https://ucarecdn.com/5b299410-2f03-4ea3-9663-83c150827ac0/chimearx-commands.png" target="_blank" rel="noopener noreferrer"><img src="https://ucarecdn.com/5b299410-2f03-4ea3-9663-83c150827ac0/-/preview/900x900/-/quality/smart_retina/-/format/auto/" alt="WESTERLIES" width="450"></a>
+</div>
+
+
+
+<br>
+
+<p align="right">Back to [[Memo]] &emsp; </p>

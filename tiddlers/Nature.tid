@@ -1,0 +1,24 @@
+color: #379f17
+created: 20250402022825728
+icon: $:/core/images/tag-button
+modified: 20250404191044088
+tags: 
+title: Nature
+type: text/vnd.tiddlywiki
+
+<br>
+@@.compactlists
+
+Animals
+
+<<list-links "[tag[Nature]tag[Animal]sort[title]]">>
+
+Seasons
+
+<<list-links "[tag[Nature]tag[Season]sort[title]]">>
+
+@@
+
+<br>
+
+<p align="right">Back to [[index]] &emsp; </p>

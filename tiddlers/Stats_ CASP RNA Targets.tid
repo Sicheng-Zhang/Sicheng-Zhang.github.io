@@ -1,5 +1,5 @@
 created: 20230124202244607
-modified: 20241224230419566
+modified: 20250404191355763
 tags: Memo RNA
 title: Stats: CASP RNA Targets
 type: text/vnd.tiddlywiki
@@ -69,7 +69,7 @@ Data from the public page of CASP: https://www.predictioncenter.org
 | [[R1108|https://www.predictioncenter.org/casp15/target.cgi?id=31&view=rna]] |CPEB3 ribozyme          |   69   |      -      |      -      |  Chimpanzee   | [[7QR3|https://www.rcsb.org/structure/7qr3]] | [[link|https://www.predictioncenter.org/casp15/rna_results.cgi?target=R1108]] |
 | [[R1116|https://www.predictioncenter.org/casp15/target.cgi?id=51&view=rna]] |Poliovirus cloverleaf          |  157   |      -      |      -      |  Poliovirus   | [[8S95|https://www.rcsb.org/structure/8s95]] | [[link|https://www.predictioncenter.org/casp15/rna_results.cgi?target=R1116]] |
 | [[R1117|https://www.predictioncenter.org/casp15/target.cgi?id=52&view=rna]] |PreQ1-I type III    |   30   |     PRF     |     -     | K. pneumoniae | [[8FZA|https://www.rcsb.org/structure/8fza]] | [[link|https://www.predictioncenter.org/casp15/rna_results.cgi?target=R1117]] |
-| [[R1126|https://www.predictioncenter.org/casp15/target.cgi?id=62&view=rna]] |Traptamer                      |  363   |     K+      |     -     |   Synthetic   | -                                           | [[link|https://www.predictioncenter.org/casp15/rna_results.cgi?target=R1126]] |
+| [[R1126|https://www.predictioncenter.org/casp15/target.cgi?id=62&view=rna]] |Traptamer                      |  363   |     K+      |     -     |   Synthetic   | [[8TVZ|https://www.rcsb.org/structure/8tvz]]                                           | [[link|https://www.predictioncenter.org/casp15/rna_results.cgi?target=R1126]] |
 | [[R1128|https://www.predictioncenter.org/casp15/target.cgi?id=64&view=rna]] |6WJ                            |  238   |      -      |      -      |   Synthetic   | [[8BTZ|https://www.rcsb.org/structure/8btz]] | [[link|https://www.predictioncenter.org/casp15/rna_results.cgi?target=R1128]] |
 | [[R1136|https://www.predictioncenter.org/casp15/target.cgi?id=80&view=rna]] |Apta-FRET                      |  374   | 1TU J93 K | - |   Synthetic   | [[7ZJ4|https://www.rcsb.org/structure/7zj4]] | [[link|https://www.predictioncenter.org/casp15/rna_results.cgi?target=R1136]] |
 | [[R1138|https://www.predictioncenter.org/casp15/target.cgi?id=91&view=rna]] |6HBC-Young |  720   |      -      |      -      |   Synthetic   | [[7PTK|https://www.rcsb.org/structure/7ptk]] | [[link|https://www.predictioncenter.org/casp15/rna_results.cgi?target=R1138]] |

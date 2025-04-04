@@ -1,58 +1,26 @@
 created: 20241001034258105
-modified: 20250108200625034
-tags: Memory
+modified: 20250404053421153
+tags: Nature Season
 title: Wetland
 type: text/vnd.tiddlywiki
 
 <br>
 
-<head>
-<style>
-.cssslide {width: auto; height: 600px; overflow:hidden; position:relative; }
-.cssslide img{ position:absolute; animation:cssslide 30s; opacity:0; width: 100%; height: auto;}
+@@.grids
+  <img src="https://ucarecdn.com/f1c22a00-a9c8-45df-9f18-99b37e0b9d36/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="January">
+  <img src="https://ucarecdn.com/52913d9a-7acd-44d8-8433-cea1218461bb/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="February">
+  <img src="https://ucarecdn.com/acd69bf0-7b3d-4aa9-b7e1-1e9feab89105/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="March">
+  <img src="https://ucarecdn.com/7a2b43eb-b54b-4750-8441-37bc54f24357/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="April">
+  <img src="https://ucarecdn.com/cc2fe40c-2e41-4d2f-8ba5-b47747d9938d/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="May">
+  <img src="https://ucarecdn.com/236712ac-2e31-4930-bbaf-f36aec19a07e/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="June">
+  <img src="https://ucarecdn.com/556f5f71-c761-4af4-a1bc-1d791949a580/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="July">
+  <img src="https://ucarecdn.com/d9b0429a-c4f6-4d32-a2a9-65d47080cdaf/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="August">
+  <img src="https://ucarecdn.com/07a002d1-0736-4b55-8c63-c11a6fd1b9e5/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="September">
+  <img src="https://ucarecdn.com/23642d74-8e1f-4a42-b8de-909788f0baf1/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="October">
+  <img src="https://ucarecdn.com/39e466d8-d407-4ac5-b5aa-9f817e129ac2/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="November">
+  <img src="https://ucarecdn.com/06fe6212-7ba2-4321-ac13-4504c6fd6fa9/-/preview/1000x750/-/quality/smart_retina/-/format/auto/" alt="December">
+@@
 
-@keyframes cssslide {5%{opacity:1;} 50%{opacity:0;}}
-.cssslide img:nth-child(1){animation-delay:0s;}
-.cssslide img:nth-child(2){animation-delay:2.5s;}
-.cssslide img:nth-child(3){animation-delay:5s;}
-.cssslide img:nth-child(4){animation-delay:7.5s;}
-.cssslide img:nth-child(5){animation-delay:10s;}
-.cssslide img:nth-child(6){animation-delay:12.5s;}
-.cssslide img:nth-child(7){animation-delay:15s;}
-.cssslide img:nth-child(8){animation-delay:17.5s;}
-.cssslide img:nth-child(9){animation-delay:20s;}
-.cssslide img:nth-child(10){animation-delay:22.5s;}
-.cssslide img:nth-child(11){animation-delay:25s;}
-.cssslide img:nth-child(12){animation-delay:27.5s;}
+<br>
 
-</style>
-</head>
-
-<div class="cssslide">
-  <img src="https://ucarecdn.com/f1c22a00-a9c8-45df-9f18-99b37e0b9d36/-/preview/1000x750" alt="Slide 1" />
-	
-  <img src="https://ucarecdn.com/52913d9a-7acd-44d8-8433-cea1218461bb/-/preview/1000x750" alt="Slide 2" />
-
-  <img src="https://ucarecdn.com/acd69bf0-7b3d-4aa9-b7e1-1e9feab89105/-/preview/1000x750" alt="Slide 3" />
-
-  <img src="https://ucarecdn.com/7a2b43eb-b54b-4750-8441-37bc54f24357/-/preview/1000x750" alt="Slide 4" />
-	
-	<img src="https://ucarecdn.com/cc2fe40c-2e41-4d2f-8ba5-b47747d9938d/-/preview/1000x750" alt="Slide 5" />
-	
-	<img src="https://ucarecdn.com/236712ac-2e31-4930-bbaf-f36aec19a07e/-/preview/1000x750" alt="Slide 6" />
-
-	<img src="https://ucarecdn.com/556f5f71-c761-4af4-a1bc-1d791949a580/-/preview/1000x750" alt="Slide 7" />
-
-	<img src="https://ucarecdn.com/d9b0429a-c4f6-4d32-a2a9-65d47080cdaf/-/preview/1000x750" alt="Slide 8" />
-
-	<img src="https://ucarecdn.com/07a002d1-0736-4b55-8c63-c11a6fd1b9e5/-/preview/1000x750" alt="Slide 9" />
-
-	<img src="https://ucarecdn.com/23642d74-8e1f-4a42-b8de-909788f0baf1/-/preview/1000x750" alt="Slide 10" />
-
-	<img src="https://ucarecdn.com/39e466d8-d407-4ac5-b5aa-9f817e129ac2/-/preview/1000x750" alt="Slide 11" />
-
-	<img src="https://ucarecdn.com/06fe6212-7ba2-4321-ac13-4504c6fd6fa9/-/preview/1000x750" alt="Slide 12" />
-	
-</div>
-
-<p align="right">Back to [[Memory]] &emsp; </p>
+<p align="right">Back to [[Nature]] &emsp; </p>
