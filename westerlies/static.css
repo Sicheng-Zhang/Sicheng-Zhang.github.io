@@ -3001,12 +3001,12 @@ column-count:3;
   --n: 4; /* number of rows*/
   --m: 3; /* number of columns */
   --g: 1.5px;  /* control the gap */
-  --f: 0.9;   /* control the scale factor */
+  --f: 0.45;   /* control the scale factor */
   
   display: grid;
   gap: var(--g);
   width: 100%;
-  height: 55vh;
+  height: 65vh;
   grid-template-columns: repeat(var(--m),auto);
 }
 
@@ -3024,6 +3024,6 @@ column-count:3;
 
 .grids img:hover{
   filter: grayscale(0);
-  width:  calc(100%*var(--f)/var(--n));
-  height: calc(100vw*var(--f)/var(--m));
+  width:  calc(350vh*var(--f)/var(--n));
+  height: calc(150vw*var(--f)/var(--m));
 }
